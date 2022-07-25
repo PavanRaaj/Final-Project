@@ -1,0 +1,466 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Redressed&family=Varela+Round&display=swap");
+.home_page_body {
+  position: absolute;
+  // background-position: fixed;
+  background-color: #F8F8F8;
+  width: 1842px;
+  height: 100%;
+  // height: 1500px;
+  top: -10px;
+  left: -10px;
+  
+}
+.index_image {
+  position: absolute;
+  position: fixed;
+  width: 1857px;
+  height: 960px;
+}
+.nav_bar_home_page {
+  position: absolute;
+  width: 1857px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  background: #116754;
+}
+.logo_image {
+  position: absolute;
+  width: 132.65px;
+  height: 57.52px;
+  left: 159.54px;
+  top: 30.63px;
+  cursor: pointer;
+}
+.nav_bar_text_button {
+  position: absolute;
+  width: 228px;
+  height: 34px;
+  top: 22px;
+  left: 1172px;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+}
+.nav_bar_right_button {
+  position: absolute;
+  width: 163px;
+  height: 47px;
+  left: 1470px;
+  top: 35px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 44px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  background-color: #11D99B;
+  color: white;
+  text-align: center;
+  padding-top: 6px;
+}
+.nav_bar_right_button:hover {
+  cursor: pointer;
+  background-color: hsl(161, 85%, 42%);
+}
+.home_page_car {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  top: 340px;
+  left: -20px;
+}
+.home_page_content {
+  position: absolute;
+  top: 50px;
+}
+.get_anywhere_text {
+  position: absolute;
+  width: 636px;
+  height: 381px;
+  left: 987px;
+  top: 140px;
+  font-weight: 800;
+  font-size: 87.338px;
+  line-height: 106px;
+  text-align: right;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+.faster_text {
+  position: absolute;
+  left: 1370px;
+  top: 230px;
+  font-weight: 800;
+  font-size: 87.338px;
+  line-height: 106px;
+  text-align: right;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+.about_app_first_line {
+  position: absolute;
+  width: 636px;
+  left: 1000px;
+  top: 450px;
+  font-size: 23px;
+  font-weight: 500;
+  text-align: right;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+.about_app_second_line {
+  position: absolute;
+  width: 636px;
+  left: 1000px;
+  top: 480px;
+  font-size: 23px;
+  font-weight: 500;
+  text-align: right;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+.take_a_ride_button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 1390px;
+  top: 655px;
+  background: #116754;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 44px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  background-color: #116754;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  transition: 0.2s ease-in-out;
+}
+.take_a_ride_button:hover {
+  cursor: pointer;
+  background-color: #147c65;
+}
+
+
+// login and sign up page
+
+
+.login_and_signup_page_div {
+  position: fixed;
+  background-color: #F8F8F8;
+  width: 1858px;
+  height: 100%;
+  height: 1500px;
+  top: -10px;
+  left: -10px;
+}
+.main_div_in_login_page_and_signup_page {
+  background-color: white;
+  position: relative;
+  margin-top: 120px;
+  box-shadow: 0 0 5px 3px rgb(214, 214, 214);
+  display: flex;
+  border-radius: 12px;
+  margin-left: 150px;
+  max-width: 1500px;
+  height: 750px;
+}
+.login_container {
+  position: relative;
+  margin-left: 100px;
+  margin-top: 70px;
+  width: 700px;
+  height: 600px;
+  border-radius: 22px 0 0 22px;
+  box-shadow: 0 0 5px 2px rgb(214, 214, 214);
+  background-color: white;
+}
+.login_sign_up_contents{
+  margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
+}
+.signup_redirecting_container{
+  margin-top: 150px;
+  width: 610px;
+  height: 430px;
+  border-radius: 0 22px 22px 0;
+  box-shadow: 0 0 2px 2px rgb(214, 214, 214);
+  background-color: #116754;
+}
+.login_title {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+// .login_title::before {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   bottom: -10px;
+//   height: 4px;
+//   width: 100%;
+//   background: #116754;
+// }
+.admin_redirect {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.admin_redirect a{
+  text-decoration: none;
+  font-weight: 1000;
+  color: #116754;
+}
+.sign_in_to_account_text_div {
+  margin-top: 150px;
+  font-size: 19px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.login_input_elements {
+  position: absolute;
+  margin-top: 220px;
+  margin-left: -210px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.login_input_email_and_signup_input_username {
+  margin-bottom: 50px;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 600px;
+  height: 40px;
+}
+.login_input_password {
+  font-size: 18px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 600px;
+  height: 40px;
+}
+.login_input_password::placeholder {
+  font-size: 40px;
+}
+.submit_and_forget_password_div_login_page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  
+}
+.login_button_login_page_and_signup_button_signup_page {
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border: none;
+  background-color: #11D99B;
+  transition: 0.1s ease-in-out;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.login_button_login_page_and_signup_button_signup_page:hover {
+  background-color: #0cc288;
+  cursor: pointer;
+}
+.forget_password_login_page a {
+  text-decoration: none;
+  color: #116754;
+  font-size: 22px;
+  transition: 0.2s ease-in-out;
+}
+.forget_password_login_page a:hover {
+  color: #009E66;
+}
+
+.signup_redirecting_main_div_in_login_page_and_login_redirecting_main_div_in_signup_page{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.signup_redirecting_title_login_page_and_login_redirecting_title_in_signup_page {
+  margin-top: 50px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+
+// .signup_redirecting_title_login_page_and_login_redirecting_title_in_signup_page::before {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   bottom: -6px;
+//   height: 4px;
+//   width: 55%;
+//   background: white;
+// }
+.signup_redirecting_asking_div_login_page_and_login_redirecting_asking_div_in_signup_page {
+  margin-top: 140px;
+  width: 600px;
+  font-size: 23px;
+  color: white;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.signup_redirecting_button_in_login_page_and_login_redirecting_button_in_signup_page {
+  position: absolute;
+  margin-top: 250px;
+  width: 140px;
+  height: 38px;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border: 3px solid white;
+  background: none;
+  transition: 0.2s ease-in-out;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.signup_redirecting_button_in_login_page_and_login_redirecting_button_in_signup_page:hover {
+  border: 3px solid #116754;
+  background: white;
+  cursor: pointer;
+  color: #116754;
+}
+
+
+// sign up extra css
+
+
+.signup_container{
+  position: absolute;
+  margin-left: 652px;
+  float: right;
+  margin-top: 50px;
+  border-radius: 0 22px 22px 0;
+  width: 700px;
+  height: 650px;
+  box-shadow: 0 0 5px 2px rgb(214, 214, 214);
+  background-color: white;
+}
+
+.signup_title{
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+// .signup_title::before{
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   bottom: -6px;
+//   height: 4px;
+//   width: 55%;
+//   background: #116754;
+// }
+.login_redirecting_container{
+  margin-top: 150px;
+  position: relative;
+  border-radius: 22px 0 0 22px;
+  left: 100px;
+  float: left;
+  width: 550px;
+  height: 430px;
+  box-shadow: 0 0 2px 2px rgb(214, 214, 214);
+  background-color: #116754;
+}
+.sign_up_to_account_text_div{
+  
+  margin-top: 120px;
+  font-size: 19px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.signup_input_elements{
+  position: absolute;
+  margin-top: 180px;
+  margin-left: -240px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.submit_div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.signup_input_email{
+  margin-bottom: 50px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 600px;
+  height: 40px;
+}
+.signup_input_password{
+  font-size: 18px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 600px;
+  height: 40px;
+}
+.signup_input_password::placeholder{
+  font-size: 40px;
+}

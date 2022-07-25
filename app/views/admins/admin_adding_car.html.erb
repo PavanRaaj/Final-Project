@@ -1,0 +1,58 @@
+<div class="home_page_body">
+    <header class="nav_bar_home_page">
+        <div><%= image_tag('logo.png',class: "logo_image") %></div>
+        <div>
+          <p class="nav_bar_amdmi_home_button_admin_adding_car_page">Admin Home</p>
+        </div>
+        <a href="#">
+          <div class="nav_bar_right_button">Log Out</div>
+        </a>
+      </header>
+       <div class="main_div_in_admin_power_page">
+        <form action="" oninput="val.value = parseInt(range.value)">
+           <div class="input_field">
+               <div class="number_field">
+                   <input type="text" pattern="[A-Za-z{3,20}">
+                   <label class="placeholder">Mobile number *</label>
+               </div>
+               <div class="car_no_field">
+                <input type="text">
+                <label class="car_no">Car Number *</label>
+            </div>
+            <div class="range_field">
+                
+                   <label >Car KM driven *</label>
+                <input type="range" min="0" max="120000" class="range_field_input" value="0" id="range">
+                <output name="val" for="range">0</output>
+               
+           </div>
+           </div>
+           </form>
+           <form>
+                <div class="input_field1">
+                     <div class="email_field">
+                         <input type="text">
+                         <label class="mail_field"> Mail address *</label>
+                    </div>
+                    <div class="car_image">
+                        <input type="text">
+                    </div>
+                             <div class="radio_field">
+                                    <label class="fuel_field">Fuel *</label>
+                                 <div>
+                                 <input type="radio" name="Fuel" id="diesel" checked="checked">
+                                 <label class="label" for="diesel">DEISEL</label>
+                                </div>
+                                <div>
+                                 <input type="radio" name="Fuel" id="petrol">
+                                 <label class="label" for="petrol" id="petrol_label">Petrol</label>
+                                </div>
+
+                             </div>
+                </div>
+                <div class="button_submit_field">
+                <button type="submit">Submit</button>
+            </div>
+                </form>
+       </div>
+</div>

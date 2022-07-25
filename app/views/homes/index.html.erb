@@ -1,0 +1,34 @@
+<%#
+<h1>Homes#index</h1>
+%> <%#
+<p>Find me in app/views/homes/index.html.erb</p>
+%>
+<div class="home_page_body">
+  <%= image_tag('index_page_bg.png',class: "index_image") %>
+  <header class="nav_bar_home_page">
+    <div><%= image_tag('logo.png',class: "logo_image") %></div>
+    <div>
+      <a href="/adding_cars/become_a_host">
+      <p class="nav_bar_text_button">Become a Host</p>
+      </a>
+    </div>
+    <a href="/homes/login">
+      <div class="nav_bar_right_button">Log in</div>
+    </a>
+  </header>
+  <div><%= image_tag('home_page_car',class: "home_page_car") %></div>
+  <div class="home_page_content">
+    <p class="get_anywhere_text">Get Anywhere</p>
+    <p class="faster_text">Faster.</p>
+
+    <p class="about_app_first_line">
+      We create quality travel trailer for you.
+    </p>
+    <p class="about_app_second_line">
+      Beautiful outside and comfortable inside.
+    </p>
+  </div>
+
+  <div class="take_a_ride_button">Take a Ride</div>
+</div>
+

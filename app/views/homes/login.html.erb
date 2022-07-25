@@ -1,0 +1,94 @@
+<div class="login_and_signup_page_div">
+  <%= image_tag('index_page_bg.png',class: "index_image") %>
+  <div class="main_div_in_login_page_and_signup_page">
+    <div class="login_container">
+      <div class="login_sign_up_contents">
+        <div class="login_title">
+          <h1>Login</h1>
+          <div class="admin_redirect">
+            Are you a
+            <a href="/admins/admin_login"
+              >Admin ?
+              
+            </a>
+          </div>
+        </div>
+        <div class="sign_in_to_account_text_div">Sign in to your Account</div>
+        <form action="/user/login" method="post">
+          <input
+            type="hidden"
+            name="authenticity_token"
+            value="<%= form_authenticity_token %>"
+          />
+          <span class="login_input_elements">
+            <span
+              class="login_input_email_title_and_signup_ipunt_username_title"
+            >
+              Mail address
+            </span>
+            <div>
+              <input
+                type="email"
+                class="login_input_email_and_signup_input_username"
+                placeholder="example@abc.com"
+                name="user[email]"
+                autofocus
+                required
+              />
+            </div>
+            <span
+              class="login_input_password_title_and_signup_ipunt_email_title"
+            >
+              Password
+            </span>
+            <div>
+              <input
+                type="password"
+                class="login_input_password"
+                placeholder="........."
+                name="user[password]"
+                required
+              />
+            </div>
+            <div class="submit_and_forget_password_div_login_page">
+              <div>
+                <button
+                  class="login_button_login_page_and_signup_button_signup_page"
+                >
+                  Login
+                </button>
+              </div>
+              <div class="forget_password_login_page">
+                <a href="">Forgot my password?</a>
+              </div>
+            </div>
+          </span>
+        </form>
+      </div>
+    </div>
+
+    <div class="signup_redirecting_container">
+      <div
+        class="signup_redirecting_main_div_in_login_page_and_login_redirecting_main_div_in_signup_page"
+      >
+        <div
+          class="signup_redirecting_title_login_page_and_login_redirecting_title_in_signup_page"
+        >
+          <h1>New user?</h1>
+        </div>
+        <div
+          class="signup_redirecting_asking_div_login_page_and_login_redirecting_asking_div_in_signup_page"
+        >
+          Create a new Account,it's free and always will be
+        </div>
+        <a href="/homes/signup">
+          <div
+            class="signup_redirecting_button_in_login_page_and_login_redirecting_button_in_signup_page"
+          >
+            Sign up
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

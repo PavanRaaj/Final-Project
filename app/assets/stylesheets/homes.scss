@@ -464,3 +464,210 @@
 .signup_input_password::placeholder{
   font-size: 40px;
 }
+
+
+// become_a_host_page
+
+.nav_bar_contact_us_button {
+  position: absolute;
+  width: 123px;
+  height: 34px;
+  top: 22px;
+  left: 1150px;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+}
+.nav_bar_adding_car_page{
+  position: absolute;
+  width: 1842px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  background: #116754;
+}
+.nav_bar_FAQs_button {
+  position: absolute;
+  width: 62px;
+  height: 34px;
+  top: 22px;
+  left: 1350px;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+}
+.nav_bar_admin_button {
+  position: absolute;
+  width: 82px;
+  height: 34px;
+  top: 22px;
+  left: 1325px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 34px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+}
+.become_a_host_page_contents {
+  top: 150px;
+  left: 159.54px;
+  height: 800px;
+  width: 1480px;
+  position: absolute;
+}
+.become_a_host_page_cover_div {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.918),
+      rgba(0, 0, 0, 0.021)
+    ),
+    url(become_a_host_cover_image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1480px;
+  height: 500px;
+  position: absolute;
+  border-radius: 10px;
+}
+.become_a_host_page_cover_contents {
+  margin-top: 150px;
+  font-size: 48.338px;
+  font-weight: 800;
+  line-height: 106px;
+  margin-left: 20px;
+  text-align: left;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+.Earn_upto_text {
+  margin-top: -80px;
+}
+.steps_to_share_my_car_button{
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 150px;
+  top: 350px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 44px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  background-color: #116754;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  transition: 0.2s ease-in-out;
+}
+.steps_to_share_my_car_button:hover{
+    cursor: pointer;
+    background-color: #147c65;
+}
+.steps_to_become_host_div {
+  //   background-color: rgb(169, 172, 126);
+  margin-top: 532px;
+  width: 1480px;
+  height: 500px;
+  position: absolute;
+}
+.simple_steps_title {
+  font-size: 48.338px;
+
+  font-weight: 800;
+  line-height: 106px;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  color: black;
+}
+.hours_text_in_title {
+  margin-top: -80px;
+  line-height: 80px;
+  margin-bottom: 150px;
+}
+.steps_text_content {
+  //   background-color: chartreuse;
+  margin-left: 150px;
+  //   margin-top: -24px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  text-align: left;
+}
+
+.steps_title {
+  // background-color: blue;
+  font-size: 23px;
+  width: 600px;
+  font-weight: 600;
+  line-height: 80px;
+  word-spacing: 3px;
+}
+.steps_content {
+  //   background-color: burlywood;
+  font-size: 18px;
+  width: 600px;
+  line-height: 28px;
+  text-align: left;
+  word-spacing: 3px;
+}
+.test_image {
+  margin-top: 20px;
+  margin-left: 200px;
+  height: 250px;
+  width: 400px;
+}
+.first_step_div {
+    //   background-color: rgb(172, 126, 126);
+    margin-top: 20px;
+    width: 1480px;
+    height: 500px;
+    position: absolute;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+    color: black;
+    display: flex;
+  }
+.second_step_div {
+  margin-top: 330px;
+  margin-left: -50px;
+  width: 1480px;
+  height: 500px;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  color: black;
+  display: flex;
+}
+.third_step_div {
+  margin-top: 640px;
+  width: 1480px;
+  height: 500px;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  color: black;
+  display: flex;
+}

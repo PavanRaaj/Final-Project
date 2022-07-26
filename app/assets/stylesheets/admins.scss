@@ -67,29 +67,6 @@
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
 }
-.input {
-  width: 370px;
-  height: 43px;
-  margin-top: 40px;
-  margin-left: 40px;
-  border-bottom: 2px solid #6d828d;
-}
-.input:hover {
-  border-bottom: 2px solid #116754;
-}
-.input input {
-  width: 300px;
-  height: 35px;
-  margin-top: 5px;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  padding-left: 10px;
-}
-.input input::placeholder {
-  color: #6d828d;
-  font-size: 18px;
-}
 
 .submit_button_admin_login_page {
   width: 170px;
@@ -129,7 +106,7 @@
 // admin_power page
 
 .nav_bar_add_car_button_admin_power_page {
-    // background-color: blue;
+  // background-color: blue;
   position: absolute;
   width: 90px;
   height: 34px;
@@ -145,178 +122,112 @@
   cursor: pointer;
 }
 
-
 // admin adding car page
 
-
-.nav_bar_amdmi_home_button_admin_adding_car_page{
-//  background-color: blue;
- position: absolute;
- width: 150px;
- height: 34px;
- top: 22px;
- left: 1272px;
- color: white;
- font-weight: 400;
- font-size: 23px;
- line-height: 34px;
- font-family: "Jost", sans-serif;
- font-family: "Redressed", cursive;
- font-family: "Varela Round", sans-serif;
- cursor: pointer;
+.nav_bar_amdmi_home_button_admin_adding_car_page {
+  //  background-color: blue;
+  position: absolute;
+  width: 150px;
+  height: 34px;
+  top: 22px;
+  left: 1272px;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
 }
-.main_div_in_admin_power_page{
-    background-color: white;
-    position: relative;
-    margin-top: 210px;
-    box-shadow: 0 0 5px 3px rgb(214, 214, 214);
-    display: flex;
-    border-radius: 12px;
-    margin-left: 350px;
-    max-width: 1200px;
-    height: 650px;
-    
+.main_div_in_admin_adding_car_page {
+  background-color: white;
+  position: absolute;
+  margin-top: 210px;
+  box-shadow: 0 0 5px 3px rgb(214, 214, 214);
+  display: flex;
+  border-radius: 12px;
+  margin-left: 350px;
+  max-width: 1200px;
+  height: 650px;
 }
-.input_field {
-    margin-top: 70px;
-    margin-left: 40px;
-    // background-color: blue;
-    width: 550px;
-    height: 500px;
+.admin_adding_cars_heading_div {
+  // background-color: red;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 450px;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 34px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
 }
-.input_field1 {
-    margin-top: 70px;
-    width: 550px;
-    height: 500px;
-    // background-color: brown;
-}
-.input_field .number_field input{
-    width: 400px;
-    height: 50px;
-    padding-left: 15px;
-    font-size: 18px;
-    border-radius: 8px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
-    border: 2px solid #e0e0e0;
-    outline: none;
-    // border: none;
-    margin-left: 70px;
-    margin-top: 70px;
-}
-.input_field .car_no_field input{
-  width: 400px;
-  height: 50px;
-  padding-left: 15px;
-  font-size: 18px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
-  border-radius: 8px;
-  border: 2px solid #e0e0e0;
-  background: none;
-  outline: none;
-  // border: none;
-  margin-left: 70px;
+.input_field_left {
   margin-top: 70px;
+  margin-left: 100px;
+  // background-color: rgb(145, 145, 185);
+  width: 550px;
+  height: 500px;
 }
-.input_field .number_field label {
-    position: absolute;
-    top: 157px; 
-    left: 130px;
-    font-size: 18px;
-    pointer-events: none;
-    color: #666;
-    background-color: white;
-    transition: top 0.3s;
-}
-.input_field .number_field input:focus {
-    border: 2px solid #24d1ac;
-}
-.input_field .number_field input:valid ~ label,
-.input_field .number_field input:focus ~ label{
-    top: 130px;
-    color: #11D99B;
-}
-.input_field .car_no_field input:focus {
-  border: 2px solid #24d1ac;
-}
-// .input_field .car_no_field input:valid ~ label,
-.input_field .car_no_field input:focus ~ .placeholder{
-  top: 130px;
+.admin_adding_car_owner_number_title {
+  font-size: 20px;
+  position: relative;
+  top: 60px;
+  line-height: 24px;
   color: #11D99B;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
 }
-.car_no {
-    position: absolute;
-    top: 284px; 
-    left: 130px;
-    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.253);
-    font-size: 18px;
-    pointer-events: none;
-    color: #666;
-    background-color: white;
-    transition: top 0.3s;
-}
-.input_field input:focus ~ .car_no
-{
-    top: 257px;
-    color: #11D99B;
-}
-.email_field input{
-    width: 400px;
-    height: 50px;
-    padding-left: 15px;
-    font-size: 18px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
-    border-radius: 8px;
-    border: 2px solid #e0e0e0;
-    outline: none;
-    // border: none;
-    margin-left: 70px;
-    margin-top: 70px;
-}
-.mail_field {
-    position: absolute;
-    top: 157px; 
-    left: 700px;
-    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.253);
-    pointer-events: none;
-    font-size: 18px;
-    color: #666;
-    background-color: white;
-    transition: top 0.3s;
-}
-.car_image input{
-  width: 400px;
-  height: 50px;
-  padding-left: 15px;
-  font-size: 18px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
-  border-radius: 8px;
-  border: 2px solid #e0e0e0;
-  outline: none;
-  // border: none;
-  margin-left: 70px;
+.admin_adding_car_owner_number {
   margin-top: 70px;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 400px;
+  height: 40px;
 }
-.input_field1 input:focus ~ .mail_field{
-    top: 130px;
-    color: #11D99B;
+.admin_adding_car_name_title{
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+  line-height: 24px;
+  color: #11D99B;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
 }
-.email_field input:focus {
-    border: 2px solid #24d1ac;
+.admin_adding_car_name{
+  margin-top: 50px;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 400px;
+  height: 40px;
 }
-.car_image input:focus {
-  border: 2px solid #24d1ac;
+
+.admin_adding_car_km_driven_title{
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+  line-height: 24px;
+  color: #11D99B;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
 }
 .range_field {
-  width: 450px;
-  height: 60px;
-  // background-color: #11D99B;
-  margin-left: 80px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
-.range_field_input{
+.range_field_input {
   margin-top: 20px;
   -webkit-appearance: none;
-  width: 330px;
+  width: 370px;
   border-radius: 20px;
   height: 15px;
   outline: none;
@@ -330,7 +241,7 @@
   border: 3px solid black;
   border-radius: 50%;
   background: white;
-  box-shadow: -410px 0 0 400px #11D99B;
+  box-shadow: -410px 0 0 400px #11d99b;
   cursor: pointer;
 }
 .range_field output {
@@ -339,10 +250,103 @@
   font-weight: 600;
   color: #0aa172;
 }
-.range_field label {
-  font-size: 18px;
-  color: #666;
+.admin_adding_car_per_day_price_title{
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+  line-height: 24px;
+  color: #11D99B;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
 }
+.admin_adding_car_per_day_price{
+  margin-top: 50px;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 400px;
+  height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input_field_right {
+  margin-top: -500px;
+  margin-left: 610px;
+  width: 550px;
+  height: 500px;
+  // background-color: rgb(218, 172, 172);
+}
+
+.admin_adding_car_registration_number_title{
+  font-size: 20px;
+  position: relative;
+  top: 60px;
+  color: #11D99B;
+  line-height: 24px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.admin_adding_car_registration_number{
+  margin-top: 70px;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 400px;
+  height: 40px;
+}
+.admin_adding_car_image_title{
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+  color: #11D99B;
+  line-height: 24px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.admin_adding_image{
+  margin-top: 50px;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 400px;
+  height: 40px;
+}
+
 .radio_field {
   width: 400px;
   height: 100px;
@@ -351,9 +355,9 @@
   justify-content: space-between;
   // background-color: greenyellow;
   // border: none;
-  margin-left: 70px;
-  margin-top: 60px;
-}
+  margin-left: -10px;
+  margin-top: 50px;
+  }
 .radio_field input[type="radio"] {
   display: none;
 }
@@ -373,7 +377,7 @@
   left: 8px;
 }
 .radio_field .label::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -383,43 +387,50 @@
   top: 17%;
 }
 .fuel_field {
-  font-size: 18px;
-  color: #666;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  color: #11D99B;
 }
 .radio_field .label:hover {
-  border: 3px solid #11D99B;
+  border: 3px solid #11d99b;
   cursor: pointer;
 }
 .radio_field .label:hover:before {
-  border: 3px solid #11D99B;
+  border: 3px solid #11d99b;
 }
 .radio_field input[type="radio"]:checked ~ .label {
-  background-color: #11D99B;
+  background-color: #11d99b;
   color: white;
   font-weight: 600;
-  border: 3px solid #11D99B;
+  border: 3px solid #11d99b;
 }
 .radio_field input[type="radio"]:checked ~ .label::before {
   height: 10px;
   width: 10px;
   border: 8px solid white;
-  background-color: #11D99B;
+  background-color: #11d99b;
 }
-.button_submit_field button{
-  width: 200px;
+.admin_adding_car_submit_button{
+  width: 140px;
   height: 50px;
-  font-size: 24px;
-  font-weight: 600;
-  margin-left: -100px;
-  margin-top: -30px;
+  margin-top: 50px;
+  margin-left: 120px;
+  text-align: center;
+  border-radius: 12px;
   color: white;
-  background-color: #11D99B;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.253);
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
   border: none;
-  border-radius: 8px;
-  transition: ease-in-out 0.1s;
+  background-color: #11D99B;
+  transition: 0.1s ease-in-out;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
 }
-.button_submit_field button:hover {
+.admin_adding_car_submit_button:hover{
+  background-color: #0cc288;
   cursor: pointer;
-  background-color: #00ca8a;
 }

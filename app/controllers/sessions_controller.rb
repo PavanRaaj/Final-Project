@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
     
     skip_before_action :ensure_user_logged_in
     
+    
     def login
         @user = User.find_by(email: params[:user][:email])
         # p @user

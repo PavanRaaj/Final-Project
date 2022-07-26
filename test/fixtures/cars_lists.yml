@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner_mobile_number: 
+  car_registration_number: MyString
+  car_name: MyString
+  per_day_price: 
+
+two:
+  owner_mobile_number: 
+  car_registration_number: MyString
+  car_name: MyString
+  per_day_price: 

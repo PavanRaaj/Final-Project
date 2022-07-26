@@ -1,58 +1,135 @@
 <div class="home_page_body">
-    <header class="nav_bar_home_page">
-        <div><%= image_tag('logo.png',class: "logo_image") %></div>
-        <div>
-          <p class="nav_bar_amdmi_home_button_admin_adding_car_page">Admin Home</p>
-        </div>
-        <a href="#">
-          <div class="nav_bar_right_button">Log Out</div>
-        </a>
-      </header>
-       <div class="main_div_in_admin_power_page">
-        <form action="" oninput="val.value = parseInt(range.value)">
-           <div class="input_field">
-               <div class="number_field">
-                   <input type="text" pattern="[A-Za-z{3,20}">
-                   <label class="placeholder">Mobile number *</label>
-               </div>
-               <div class="car_no_field">
-                <input type="text">
-                <label class="car_no">Car Number *</label>
-            </div>
-            <div class="range_field">
-                
-                   <label >Car KM driven *</label>
-                <input type="range" min="0" max="120000" class="range_field_input" value="0" id="range">
-                <output name="val" for="range">0</output>
-               
-           </div>
-           </div>
-           </form>
-           <form>
-                <div class="input_field1">
-                     <div class="email_field">
-                         <input type="text">
-                         <label class="mail_field"> Mail address *</label>
-                    </div>
-                    <div class="car_image">
-                        <input type="text">
-                    </div>
-                             <div class="radio_field">
-                                    <label class="fuel_field">Fuel *</label>
-                                 <div>
-                                 <input type="radio" name="Fuel" id="diesel" checked="checked">
-                                 <label class="label" for="diesel">DEISEL</label>
-                                </div>
-                                <div>
-                                 <input type="radio" name="Fuel" id="petrol">
-                                 <label class="label" for="petrol" id="petrol_label">Petrol</label>
-                                </div>
+  <header class="nav_bar_home_page">
+    <div><%= image_tag('logo.png',class: "logo_image") %></div>
+    <div>
+      <p class="nav_bar_amdmi_home_button_admin_adding_car_page">Admin Home</p>
+    </div>
+    <a href="#">
+      <div class="nav_bar_right_button">Log Out</div>
+    </a>
+  </header>
 
-                             </div>
-                </div>
-                <div class="button_submit_field">
-                <button type="submit">Submit</button>
-            </div>
-                </form>
-       </div>
+  <div class="main_div_in_admin_adding_car_page">
+    <div class="admin_adding_cars_heading_div">
+      <p>Adding Cars</p>
+    </div>
+    <form action="/admins/admin_add_car" method="post" oninput="val.value = parseInt(range.value)">
+
+      <input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>"
+    />
+      <div class="input_field_left">
+        <span class="admin_adding_car_owner_number_title">
+          Owner Mobile Number *
+        </span>
+
+        <div>
+          <input
+            type="tel"
+            class="admin_adding_car_owner_number"
+            placeholder="9838839898"
+            name="car_list[owner_mobile_number]"
+            autofocus
+            required
+          />
+        </div>
+
+        <span class="admin_adding_car_name_title">
+            Car Name *
+          </span>
+  
+          <div>
+            <input
+              type="text"
+              class="admin_adding_car_name"
+              placeholder="Dastun Redi-GO"
+              name="car_list[car_name]"
+              required
+            />
+          </div>
+
+          <span class="admin_adding_car_km_driven_title">
+            Car KM driven *
+          </span>
+        <div class="range_field">
+          <input
+            
+            type="range"
+            min="0"
+            max="12000"
+            class="range_field_input"
+            value="0"
+            id="range"
+          />
+          <output name="val" for="range">0</output>
+        </div>
+
+        <span class="admin_adding_car_per_day_price_title">
+            Per day Car Price *
+          </span>
+  
+          <div>
+            <input
+              type="text"
+              class="admin_adding_car_per_day_price"
+              placeholder="In INR"
+              name="car_list[per_day_price]"
+              required
+            />
+          </div>
+
+      </div>
+
+      <div class="input_field_right">
+        <span class="admin_adding_car_registration_number_title">
+            Car Registration Number *
+          </span>
+  
+          <div>
+            <input
+              type="text"
+              class="admin_adding_car_registration_number"
+              placeholder="DN39AN1234"
+              name="car_list[car_registration_number]"
+              required
+            />
+          </div>
+
+          <span class="admin_adding_car_image_title">
+            Car Image *
+          </span>
+  
+          <div>
+            <input
+              type="file"
+              class="admin_adding_image"
+              
+            />
+          </div>
+
+        <div class="radio_field">
+          <label class="fuel_field">Fuel *</label>
+          <div>
+            <input type="radio" name="Fuel" id="diesel" checked="checked" />
+            <label class="label" for="diesel">Deisel</label>
+          </div>
+          <div>
+            <input type="radio" name="Fuel" id="petrol" />
+            <label class="label" for="petrol" id="petrol_label">Petrol</label>
+          </div>
+        </div>
+
+        <div>
+            <input
+              type="submit"
+              class="admin_adding_car_submit_button"
+              value="Add Car"
+            />
+          </div>
+
+      </div>
+    </form>
+  </div>
 </div>

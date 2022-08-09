@@ -1,0 +1,550 @@
+// Place all the styles related to the booking_car controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Redressed&family=Varela+Round&display=swap");
+
+.nav_bar_booking_car_page {
+  position: absolute;
+  width: 1847px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  background: #116754;
+}
+.main_div_in_booking_car_page {
+  //   background-color: rgba(0, 0, 255, 0.424);
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 0 5px 3px rgb(214, 214, 214);
+  position: absolute;
+  border-radius: 22px;
+  margin-left: 500px;
+  margin-top: 250px;
+}
+.start_details_div {
+  // background-color: brown;
+  width: 750px;
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.start_details_title {
+  font-size: 35px;
+  font-weight: 900px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.start_details_feilds_first_line {
+  display: flex;
+  margin-left: 10px;
+}
+.start_details_feilds_first_line input {
+  font-size: 1.2rem;
+}
+.pick_up_point {
+  margin-top: 30px;
+  background: none;
+  font-size: 19px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 350px;
+  height: 40px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.pick_up_city {
+  margin-top: 30px;
+  margin-left: 35px;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 310px;
+  height: 40px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+
+.start_details_feilds_second_line {
+  display: flex;
+  margin-left: 10px;
+}
+.start_details_feilds_second_line input {
+  font-size: 1.2rem;
+}
+.start_and_end_date {
+  margin-top: 50px;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 350px;
+  height: 40px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.start_and_end_time {
+  margin-top: 50px;
+  margin-left: 35px;
+  background: none;
+  font-size: 18px;
+  // padding-left: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 310px;
+  height: 40px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+
+.end_details_div {
+  // background-color: cornflowerblue;
+  width: 750px;
+  height: 100px;
+  margin-top: -10px;
+  margin-left: 25px;
+}
+.end_details_title {
+  font-size: 35px;
+  font-weight: 900px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.end_details_feilds {
+  display: flex;
+  margin-top: -30px;
+  margin-left: 10px;
+}
+
+.search_cars_button_div {
+  // background-color: rgb(236, 192, 17);
+  width: 250px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 310px;
+}
+.search_cars_button {
+  width: 180px;
+  height: 50px;
+  // margin-top: 50px;
+  // margin-left: 500px;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border: none;
+  background-color: #11d99b;
+  transition: 0.1s ease-in-out;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.search_cars_button:hover {
+  background-color: #0cc288;
+  cursor: pointer;
+}
+
+// listing_car
+
+.nav_bar_listing_car_page{
+  position: absolute;
+  width: 1830px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  background: #116754;
+}
+.search_box_car_listing_page_div{
+  position: absolute;
+  margin-left: 1200px;
+  margin-top: 30px;
+}
+
+.search_box_car_listing_page{
+  background-color: white;
+  border-radius: 12px;
+  padding-left: 5px;
+  width: 500px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 23px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.apply_filter_button{
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border: none;
+  // margin-top: 20px;
+  margin-left: -187px;
+  background-color: #11d99b;
+  transition: 0.1s ease-in-out;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.apply_filter_button:hover{
+  background-color: #0cc288;
+  cursor: pointer;
+}
+.no_result_error{
+  font-size: 35px;
+  font-weight: 900px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-left: 480px;
+}
+.car_listing_car_name_div {
+  //  background-color: rgb(218, 109, 109);
+  position: relative;
+  margin-left: 50px;
+  top: 25px;
+  // display: flex;
+  font-size: 33px;
+  font-weight: 600;
+  // justify-content: center;
+  // align-items: center;
+  width: 400px;
+  height: 50px;
+}
+.car_listing_per_day_price {
+  // background-color: rgb(188, 231, 146);
+  position: relative;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  top: -20px;
+  margin-left: 680px;
+  width: 250px;
+  height: 50px;
+}
+.car_listing_KM_driven_div {
+  // background-color: darkgray;
+  position: relative;
+  top: -150px;
+  margin-left: 295px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 230px;
+  height: 30px;
+}
+.listing_car_Registration_no_div {
+  position: relative;
+  top: -130px;
+  margin-left: 295px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 400px;
+  height: 30px;
+}
+.car_listing_fuel_type_div {
+  // background-color: rgb(18, 202, 202);
+  position: relative;
+  top: -120px;
+  margin-left: 680px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 230px;
+  height: 30px;
+}
+
+.car_listing_book_now_div {
+  // background-color: darkorchid;
+  background-color: #11d99b;
+  border-radius: 25px;
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -200px;
+  margin-left: 960px;
+  width: 200px;
+  height: 40px;
+}
+.car_listing_book_now_div:hover {
+  background-color: hsl(161, 85%, 42%);
+  cursor: pointer;
+}
+.book_now_button{
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+
+
+// booking_confirmation_page
+
+
+.confirmation_main_div{
+    height: 730px;
+    box-shadow: 0 0 5px 3px rgb(214, 214, 214);
+    border-radius: 12px;
+    width: 650px;
+    margin-top: 100px;
+    margin-left: 600px;
+    
+}
+.confirmation_title{
+    position: absolute;
+    height: 80px;
+    width: 450px;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+    // background-color: yellow;
+}
+.car_name_and_car_image_div{
+    position: absolute;
+    display: flex;
+    // background-color: violet;
+    margin-top: 85px;
+    margin-left: 30px;
+
+}
+.confirmation_page_car_name{
+    // background-color: rgb(218, 109, 109);
+  position: relative;
+//   margin-left: 50px;
+//   top: 45px;
+  // display: flex;
+  font-size: 33px;
+//   font-weight: 600;
+  // justify-content: center;
+  // align-items: center;
+  width: 400px;
+  height: 50px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.confirmation_page_car_image{
+    // background-color: aqua;
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -50px;
+//   top: 25px;
+//   margin-left: 45px;
+  height: 150px;
+  width: 200px;
+}
+.confirmation_page_start_and_end_details_div{
+    //  background-color: rgb(218, 109, 109);
+  position: relative;
+    margin-left: 30px;
+    top: 145px;
+    // display: flex;
+    font-size: 33px;
+  //   font-weight: 600;
+    // justify-content: center;
+    // align-items: center;
+    width: 300px;
+    height: 100px;
+    font-size: 18px;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+.confirmation_page_start_details_div{
+    // background-color: chartreuse;
+    position: relative;
+    width: 260px;
+    height: 50px;
+}
+.confirmation_page_end_details_div{
+    // background-color: blueviolet;
+    
+    position: relative;
+    width: 260px;
+    height: 50px;
+    
+}
+
+.confirmation_page_km_driven{
+    // background-color: coral;
+    height: 50px;
+    width: 260px;
+    margin-top: 150px;
+    font-size: 23px;
+    margin-left: 30px;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+.confirmation_page_total_amount{
+    // background-color: darkcyan;
+    // height: 50px;
+    width: 400px;
+    font-size: 28px;
+    margin-left: 160px;
+    margin-top: 10px;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+.payment_conclusion_div{
+    font-size: 15px;
+    margin-left: 30px;
+    height: 30px;
+    color: darkgrey;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+.confirmation_page_pick_up_details{
+    // background-color: darkgoldenrod;
+    height: 50px;
+    width: 600px;
+    font-size: 23px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+.keep_in_mind_main_div{
+    font-size: 20px;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+.keep_in_mind_title{
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 30px;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+.license_info{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+.license_image{
+    width: 50px;
+    height: 50px;
+}
+.license_text{
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 10px;
+}
+.terms_and_conditions_info{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.terms_and_conditions_image{
+    width: 50px;
+    height: 50px;
+}
+.terms_and_conditions_text{
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 10px;
+margin-top: -28px;
+font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+.terms_and_conditions_check_box{
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    margin-left: 290px;
+}
+.terms_condition_breif_text{
+    font-size: 15px;
+    margin-left: 90px;
+    margin-top: -31px;
+    color: darkgrey;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+.terms_and_conditions_see_details{
+    color: #11D99B;
+    font-size: 15px;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+    text-decoration: underline;
+    margin-left: 90px;
+}
+.terms_and_conditions_see_details:hover{
+    color: hsl(161, 85%, 42%);
+  cursor: pointer;
+}
+.check_out_button{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #11D99B;
+    border-radius: 12px;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    margin-left: 170px;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    font-family: "Jost", sans-serif;
+    font-family: "Redressed", cursive;
+    font-family: "Varela Round", sans-serif;
+}
+
+.check_out_button:hover{
+    background-color: hsl(161, 85%, 42%);
+  cursor: pointer;
+}

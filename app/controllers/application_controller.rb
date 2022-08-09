@@ -19,6 +19,16 @@ class ApplicationController < ActionController::Base
         nil
       end
     end
+   
 
+    def booking_user
+      return @booking_user if @booking_user
+      booking_id = session[:booking_user_id]
+      if booking_id
+          @booking_user = BookingDetail.find(booking_id)
+      else
+        nil
+      end
+    end
 
 end

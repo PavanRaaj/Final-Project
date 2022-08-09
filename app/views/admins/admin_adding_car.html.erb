@@ -1,5 +1,5 @@
 <div class="home_page_body">
-  <header class="nav_bar_home_page">
+  <!-- <header class="nav_bar_home_page">
     <div><%= image_tag('logo.png',class: "logo_image") %></div>
     <div>
       <p class="nav_bar_amdmi_home_button_admin_adding_car_page">Admin Home</p>
@@ -7,13 +7,13 @@
     <a href="#">
       <div class="nav_bar_right_button">Log Out</div>
     </a>
-  </header>
+  </header> -->
 
   <div class="main_div_in_admin_adding_car_page">
     <div class="admin_adding_cars_heading_div">
       <p>Adding Cars</p>
     </div>
-    <form action="/admins/admin_add_car" method="post" oninput="val.value = parseInt(range.value)">
+    <form action="/admins/admin_add_car" method="post" enctype="multipart/form-data" oninput="val.value = parseInt(range.value)" >
 
       <input
       type="hidden"
@@ -62,6 +62,8 @@
             class="range_field_input"
             value="0"
             id="range"
+            required
+            name="car_list[KM_driven]"
           />
           <output name="val" for="range">0</output>
         </div>
@@ -83,6 +85,21 @@
       </div>
 
       <div class="input_field_right">
+
+        <span class="admin_adding_car_owner_name_title">
+          Car Owner Name *
+        </span>
+
+        <div>
+          <input
+            type="text"
+            class="admin_adding_car_owner_name"
+            placeholder="Pavan Raaj"
+            name="car_list[car_owner_name]"
+            required
+          />
+        </div>
+
         <span class="admin_adding_car_registration_number_title">
             Car Registration Number *
           </span>
@@ -105,30 +122,37 @@
             <input
               type="file"
               class="admin_adding_image"
-              
+              name="car_list[car_image]"
+              required
             />
           </div>
+
+         
 
         <div class="radio_field">
           <label class="fuel_field">Fuel *</label>
           <div>
-            <input type="radio" name="Fuel" id="diesel" checked="checked" />
-            <label class="label" for="diesel">Deisel</label>
+            <input type="radio" name="car_list[fuel_type]" id="diesel" checked="checked" value="Diesel"/>
+            <label class="label" for="diesel">Diesel</label>
           </div>
           <div>
-            <input type="radio" name="Fuel" id="petrol" />
+            <input type="radio" name="car_list[fuel_type]" id="petrol" value="Petrol"/>
             <label class="label" for="petrol" id="petrol_label">Petrol</label>
           </div>
         </div>
 
-        <div>
-            <input
-              type="submit"
-              class="admin_adding_car_submit_button"
-              value="Add Car"
-            />
-          </div>
+        
 
+       
+
+      </div>
+
+      <div>
+        <input
+          type="submit"
+          class="admin_adding_car_submit_button"
+          value="Add Car"
+        />
       </div>
     </form>
   </div>

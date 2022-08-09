@@ -71,7 +71,78 @@
 .nav_bar_right_button:hover {
   cursor: pointer;
   background-color: hsl(161, 85%, 42%);
+  color: white;
 }
+.dropbtn {
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 44px;
+  width: 163px;
+  height: 47px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  background-color: #11D99B;
+  color: white;
+  text-align: center;
+  // padding-top: 3px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 75%;
+  top: 32%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: hsl(161, 85%, 42%);
+  left: 10%;
+  top: 100%;
+  border-radius: 6px;
+  height: 45px;
+  min-width: 160px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 3px 16px;
+  // padding: 10px 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content:hover {
+  // background-color: hsl(161, 86%, 52%);
+  cursor: pointer;
+
+}
+// .dropdown-content a:hover{
+//   color: white;
+// }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: hsl(161, 85%, 42%);
+  border-radius: 12px 12px 0 12px;
+}
+
+
 .home_page_car {
   position: absolute;
   width: 1000px;
@@ -473,7 +544,7 @@
   width: 123px;
   height: 34px;
   top: 22px;
-  left: 1150px;
+  left: 1050px;
   color: white;
   font-weight: 400;
   font-size: 23px;
@@ -483,7 +554,7 @@
   font-family: "Varela Round", sans-serif;
   cursor: pointer;
 }
-.nav_bar_adding_car_page{
+.nav_bar_become_a_host_page{
   position: absolute;
   width: 1842px;
   height: 110px;
@@ -491,12 +562,12 @@
   top: 0px;
   background: #116754;
 }
-.nav_bar_FAQs_button {
+.nav_bar_tcs_button {
   position: absolute;
   width: 62px;
   height: 34px;
   top: 22px;
-  left: 1350px;
+  left: 1250px;
   color: white;
   font-weight: 400;
   font-size: 23px;
@@ -636,6 +707,23 @@
   height: 250px;
   width: 400px;
 }
+.send_mail_image{
+  // margin-top: 20px;
+  margin-left: 100px;
+  height: 250px;
+  width: 400px;
+}
+.hand_over_car_image_image{
+  margin-left: 150px;
+  height: 250px;
+  width: 300px;
+}
+.car_verification_image{
+  margin-top: -10px;
+  margin-left: 150px;
+  height: 270px;
+  width: 320px;
+}
 .first_step_div {
     //   background-color: rgb(172, 126, 126);
     margin-top: 20px;
@@ -650,7 +738,7 @@
   }
 .second_step_div {
   margin-top: 330px;
-  margin-left: -50px;
+  margin-left: -30px;
   width: 1480px;
   height: 500px;
   position: absolute;
@@ -670,4 +758,87 @@
   font-family: "Varela Round", sans-serif;
   color: black;
   display: flex;
+}
+
+// terms and_condition_page
+
+.nav_bar_terms_and_condition_page{
+  position: absolute;
+  width: 1832px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  background: #116754;
+}
+.nav_bar_tcs_button_terms_and_condition_page{
+  position: absolute;
+  width: 62px;
+  height: 34px;
+  top: 22px;
+  left: 1400px;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+}
+.nav_bar_contact_us_button_terms_and_condition_page{
+  position: absolute;
+  width: 123px;
+  height: 34px;
+  top: 22px;
+  left: 1150px;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+}
+.terms_and_conditions_div{
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  margin-left: 70px;
+}
+.terms_ad_conditions_title{
+  font-size: 25px;
+  
+  margin-top: 130px;
+  margin-left: 650px;
+}
+.note_in_tcs{
+  font-size: 17px;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+.points_title{
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+.points_text{
+  font-size: 18px;
+  margin-left: 250px;
+  margin-top: 20px;
+  width: 1200px;
+}
+.sub_points{
+  font-size: 18px;
+  margin-left: 280px;
+  margin-top: 20px;
+  width: 1200px;
+}
+.last_points_text{
+  font-size: 18px;
+  margin-left: 250px;
+  margin-top: 20px;
+  width: 1200px;
+  margin-bottom: 50px;
 }

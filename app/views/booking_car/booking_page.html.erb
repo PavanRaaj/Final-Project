@@ -1,0 +1,95 @@
+<header class="nav_bar_booking_car_page">
+  <div><%= image_tag('logo.png',class: "logo_image") %></div>
+  <div>
+    <p class="nav_bar_contact_us_button">Contact Us</p>
+  </div>
+  <a href="/homes/terms_and_condition_page">
+    <div>
+      <p class="nav_bar_tcs_button">T&c's</p>
+    </div>
+    </a>
+  <% if @presence == 0 %>
+    <a href="/homes/login">
+      <div class="nav_bar_right_button">Log in</div>
+    </a>
+    <% else %>
+    
+      <div class="dropdown">
+        <a href="#">
+        <button class="dropbtn"><%= @user.user_name %></button></a>
+        <div class="dropdown-content">
+          <a href="/logout" data-method="delete">Log Out</a>
+        </div>
+      </div>
+    
+    <% end %>
+</header>
+
+<div class="main_div_in_booking_car_page">
+    <form action="/booking_car/booking_detail" method="post">
+    <input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>"
+    />
+  <div class="start_details_div">
+    <div class="start_details_title">start details</div>
+
+    <div class="start_details_feilds_first_line">
+      <input
+        type="text"
+        name="booking_detail[pick_up_point]"
+        id=""
+        autofocus
+        required
+        placeholder="Pick Up Point, Airport or Hotels"
+        class="pick_up_point"
+      />
+      <input
+        type="text"
+        name="booking_detail[pick_up_city]"
+        id=""
+        required
+        placeholder="Pick Up City"
+        class="pick_up_city"
+      />
+    </div>
+
+    <div class="start_details_feilds_second_line">
+      <input type="date" name="booking_detail[pick_up_date]" id="" required class="start_and_end_date" min=<%="#{Date.today}"%> />
+      <% hour=Time.now.hour%>
+      <% min_hour = hour+03%>
+      <% time = "#{min_hour}"+":"+"#{Time.now.min}" %>
+      <input
+        type="time"
+        name="booking_detail[pick_up_time]"
+        id=""
+        required
+        min=<%=time%>
+        class="start_and_end_time"
+      />
+    </div>
+  </div>
+  <div class="end_details_div">
+    <div class="end_details_title">end details</div>
+
+    <div class="end_details_feilds">
+      <input type="date" name="booking_detail[end_date]" required id="" min=<%="#{Date.today+1}"%> class="start_and_end_date" />
+     
+      <input
+        type="time"
+        name="booking_detail[end_time]]"
+        id=""
+        required
+        placeholder="HH:MM"
+        class="start_and_end_time"
+      />
+    </div>
+  </div>
+
+  <div class="search_cars_button_div">
+    <input type="submit" value="Search Car" class="search_cars_button" />
+  </div>
+
+  </form>
+</div>

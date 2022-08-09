@@ -1,5 +1,5 @@
-<div class="home_page_body">
-  <header class="nav_bar_home_page">
+<div >
+  <header class="nav_bar_admin_power_page">
     <div><%= image_tag('logo.png',class: "logo_image") %></div>
 
     <div>
@@ -12,4 +12,52 @@
       <div class="nav_bar_right_button">Log Out</div>
     </a>
   </header>
+
+  <div class="admin_car_listing_title">
+    <span>Avaiable Cars</span>
+  </div>
+
+  <div class="admin_power_car_listing_main_div">
+
+  
+   <% CarsList.all.each do |car| %>
+     
+   
+  <div class="admin_power_car_listing_div">
+    <div class="car_image_and_car_title_div">
+      <div class="admin_power_car_listing_image_div">
+        <span><%= image_tag car.car_image, class:"img_preview" %> </span>
+      </div>
+      <div class="admin_power_car_listing_car_name_div">
+        <span> <%= car.car_name%> </span>
+      </div>
+    </div>
+
+    <div class="admin_power_car_listing_per_day_price">
+      <span> &#8377; <%= car.per_day_price%> /Per Day</span>
+    </div>
+
+    <div class="admin_power_car_listing_owner_name_div">
+      <span> <b> Owner Name: </b><%= car.car_owner_name%> </span>
+    </div>
+    <div class="admin_power_car_listing_Registration_no_div">
+      <span> <b> Registration no: </b><%= car.car_registration_number%></span>
+    </div>
+
+    <div class="admin_power_car_listing_fuel_type_div">
+      <span> <b> Fuel Type: </b>  <%= car.fuel_type%></span>
+    </div>
+    <div class="admin_power_car_listing_KM_driven_div">
+      <span> <b> KM Driven: </b>  <%= car.KM_driven %> </span>
+    </div>
+
+    <div class="admin_power_car_listing_remove_car_div">
+      <%= link_to "Remove Car", "/remove_car/#{car.id}" ,method: :delete, data: {confirm:
+        'Are you sure ?'} %>
+    </div>
+    
+  </div>
+
+  <%end%>
+  </div>
 </div>

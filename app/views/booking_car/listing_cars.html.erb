@@ -1,0 +1,96 @@
+<header class="nav_bar_listing_car_page">
+  <div><%= image_tag('logo.png',class: "logo_image") %></div>
+  <form action="/search" method="get">
+    <input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>"
+    />
+    <div class="search_box_car_listing_page_div">
+      <input
+        type="search"
+        name="search"
+        id=""
+        placeholder="Search with Car Name"
+        class="search_box_car_listing_page"
+      />
+      <input type="submit" value="Apply Filters" class="apply_filter_button" />
+    </div>
+  </form>
+ 
+</header>
+
+<div class="admin_car_listing_title">
+  <span>Avaiable Cars</span>
+</div>
+
+<div class="admin_power_car_listing_main_div">
+  <% if @presence_value==0%> <% CarsList.all.each do |car| %>
+  <div class="admin_power_car_listing_div">
+    <div class="car_image_and_car_title_div">
+      <div class="admin_power_car_listing_image_div">
+        <span><%= image_tag car.car_image, class:"img_preview" %> </span>
+      </div>
+      <div class="car_listing_car_name_div">
+        <span> <%= car.car_name%> </span>
+      </div>
+    </div>
+
+    <div class="car_listing_per_day_price">
+      <span> &#8377; <b><%= car.per_day_price%> </b>/Per Day</span>
+    </div>
+
+    <div class="car_listing_fuel_type_div">
+      <span> <b> <%= car.fuel_type%> </b> </span>
+    </div>
+    <div class="car_listing_KM_driven_div">
+      <span> <b><%= car.KM_driven %> </b> KM's Driven</span>
+    </div>
+
+    <div class="listing_car_Registration_no_div">
+      <span> <b> Registration no.: </b><%= car.car_registration_number%></span>
+    </div>
+
+    <div class="car_listing_book_now_div">
+      <%=link_to "Book Now","/book/#{car.id}", class: "book_now_button",method:
+      :post%>
+    </div>
+  </div>
+  <% end %> <% elsif @presence_value==1 and @search_params !=[]%> <%
+  CarsList.all.each do |car| %> <% if @search_params.include? car.id %>
+  <div class="admin_power_car_listing_div">
+    <div class="car_image_and_car_title_div">
+      <div class="admin_power_car_listing_image_div">
+        <span><%= image_tag car.car_image, class:"img_preview" %> </span>
+      </div>
+      <div class="car_listing_car_name_div">
+        <span> <%= car.car_name%> </span>
+      </div>
+    </div>
+
+    <div class="car_listing_per_day_price">
+      <span> &#8377; <b><%= car.per_day_price%> </b>/Per Day</span>
+    </div>
+
+    <div class="car_listing_fuel_type_div">
+      <span> <b> <%= car.fuel_type%> </b> </span>
+    </div>
+    <div class="car_listing_KM_driven_div">
+      <span> <b><%= car.KM_driven %> </b> KM's Driven</span>
+    </div>
+
+    <div class="listing_car_Registration_no_div">
+      <span> <b> Registration no.: </b><%= car.car_registration_number%></span>
+    </div>
+
+    <div class="car_listing_book_now_div">
+      <%=link_to "Book Now","/book/#{car.id}", class: "book_now_button",method:
+      :post%>
+    </div>
+  </div>
+  <% end %>
+
+<% end %> <% elsif @search_params==[] and @presence_value==1 %>
+<div class="no_result_error">No Results Found</div>
+<%end%>
+</div>

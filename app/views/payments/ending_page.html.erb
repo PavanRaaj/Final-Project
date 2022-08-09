@@ -1,0 +1,43 @@
+<header class="nav_bar_become_a_host_page">
+    <div><%= image_tag('logo.png',class: "logo_image") %></div>
+    <div>
+      <p class="nav_bar_contact_us_button">Contact Us</p>
+    </div>
+    <a href="/homes/terms_and_condition_page">
+    <div>
+      <p class="nav_bar_tcs_button">T&c's</p>
+    </div>
+    </a>
+    <% if @presence == 0 %>
+    <a href="/homes/login">
+      <div class="nav_bar_right_button">Log in</div>
+    </a>
+    <% else %>
+    
+      <div class="dropdown">
+        <a href="#">
+        <button class="dropbtn"><%= @user.user_name %></button></a>
+        <div class="dropdown-content">
+          <a href="/logout" data-method="delete">Log Out</a>
+        </div>
+      </div>
+    
+    <% end %>
+  </header>
+
+<div class="end_page_div">
+  <div class="booking_successful_title">
+    Car Booked Successfully
+  </div>
+  <div class="car_delivery_at_div">
+    <span> <b> Car Delivery at: </b> <%= @booking_user.pick_up_point %>,<%= @booking_user.pick_up_city %>. </span>
+  </div>
+  <div class="ending_page_car_registration_number_div">
+    <span><b> Car Registration no.: </b> <%= @car_detail.car_registration_number %></span>
+  </div>
+
+  <a href="/"><div class="go_to_home_button">
+    Go to home
+  </div>
+  </a>
+</div>

@@ -15,15 +15,23 @@ class AdminsController < ApplicationController
    
    def admin_add_car
     car_list = CarsList.new( car_list_params )
+    car_list.car_image.attach( car_list_params[:car_image])
     if car_list.save
-    render plain: "sucess"
+        redirect_to admin_power_path
+    end
+   end
+ 
+   def remove_car
+    @del = CarsList.find(params[:id])
+    if @del.destroy
+    redirect_to admin_power_path
     end
    end
 
    private
 
    def car_list_params
-    params.require(:car_list).permit(:owner_mobile_number, :car_registration_number, :car_name, :per_day_price)
+    params.require(:car_list).permit(:owner_mobile_number, :car_registration_number, :car_name, :per_day_price, :car_owner_name, :car_image, :KM_driven, :fuel_type)
    end
 
 

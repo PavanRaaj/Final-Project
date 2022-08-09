@@ -1,15 +1,29 @@
 <div class="home_page_body">
-  <header class="nav_bar_adding_car_page">
+  <header class="nav_bar_become_a_host_page">
     <div><%= image_tag('logo.png',class: "logo_image") %></div>
     <div>
       <p class="nav_bar_contact_us_button">Contact Us</p>
     </div>
+    <a href="/homes/terms_and_condition_page">
     <div>
-      <p class="nav_bar_FAQs_button">FAQs</p>
+      <p class="nav_bar_tcs_button">T&c's</p>
     </div>
+    </a>
+    <% if @presence == 0 %>
     <a href="/homes/login">
       <div class="nav_bar_right_button">Log in</div>
     </a>
+    <% else %>
+    
+      <div class="dropdown">
+        <a href="#">
+        <button class="dropbtn"><%= @user.user_name %></button></a>
+        <div class="dropdown-content">
+          <a href="/logout" data-method="delete">Log Out</a>
+        </div>
+      </div>
+    
+    <% end %>
   </header>
 
   <div class="become_a_host_page_contents">
@@ -41,13 +55,13 @@
         </div>
 
         <div class="steps_image_content">
-          <%= image_tag('test.png',class: "test_image") %>
+          <%= image_tag('send_mail_image.jpg',class: "send_mail_image") %>
         </div>
       </div>
 
       <div class="second_step_div">
         <div class="steps_image_content">
-          <%= image_tag('test.png',class: "test_image") %>
+          <%= image_tag('car_verification.png',class: "car_verification_image") %>
         </div>
 
         <div class="steps_text_content">
@@ -75,7 +89,7 @@
         </div>
 
         <div class="steps_image_content">
-          <%= image_tag('test.png',class: "test_image") %>
+          <%= image_tag('hand_over_car_image.png',class: "hand_over_car_image_image") %>
         </div>
       </div>
     </div>

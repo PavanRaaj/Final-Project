@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pick_up_point: MyString
+  pick_up_city: MyString
+  pick_up_date: 2022-08-04
+  pick_up_time: 2022-08-04 14:27:00
+  end_date: 2022-08-04
+  end_time: 2022-08-04 14:27:00
+  cars_lists: one
+
+two:
+  pick_up_point: MyString
+  pick_up_city: MyString
+  pick_up_date: 2022-08-04
+  pick_up_time: 2022-08-04 14:27:00
+  end_date: 2022-08-04
+  end_time: 2022-08-04 14:27:00
+  cars_lists: two

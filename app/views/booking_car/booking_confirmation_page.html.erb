@@ -1,0 +1,59 @@
+<div class="confirmation_main_div">
+  <div class="confirmation_title">Your Booking Confirmation</div>
+  <div class="car_name_and_car_image_div">
+    <div class="confirmation_page_car_name"><%= @car.car_name %></div>
+    <div class="confirmation_page_car_image"><%= image_tag(@car.car_image,class: "img_preview") %></div>
+  </div>
+  <div class="confirmation_page_start_and_end_details_div">
+    <div class="confirmation_page_start_details_div"><%= @booking_detail.pick_up_date.strftime("%m/%d/%Y")%>, <%= @booking_detail.pick_up_time.strftime("%I:%M %p")%></div>
+    <div class="confirmation_page_end_details_div"><%= @booking_detail.end_date.strftime("%m/%d/%Y")%>, <%= @booking_detail.end_time.strftime("%I:%M %p")%></div>
+   
+  </div>
+   
+  <div class="confirmation_page_km_driven"><%= @car.KM_driven %> KM's Driven</div>
+  <div class="confirmation_page_total_amount">
+    Total amount: &#8377; <%= @car.per_day_price %>
+  </div>
+   <div class="payment_conclusion_div">
+    Per day amount is taken as protection policy.Total amount will be taken at end of trip. 
+   </div>
+  <div class="confirmation_page_pick_up_details">
+    Pick up point: <%= @booking_detail.pick_up_point %>,<%= @booking_detail.pick_up_city %>.
+  </div>
+ 
+  <div class="keep_in_mind_main_div">
+    <div class="keep_in_mind_title">Keep In Mind</div>
+    <div class="license_info">
+      <div><%= image_tag('license.png',class: "license_image") %></div>
+      <div class="license_text">Driving License Mandatory</div>
+    </div>
+
+    <div class="terms_and_conditions_info">
+      <div>
+        <%= image_tag('terms_and_conditions.png',class:
+        "terms_and_conditions_image") %>
+      </div>
+      <div class="terms_and_conditions_text">Agreement Policy</div>
+      <form action="/payments/payment_page">
+      <input
+        type="checkbox"
+        name=""
+        id=""
+        required
+        title="Please Agree our Terms and Conditions"
+        class="terms_and_conditions_check_box"
+      />
+      
+    </div>
+    <div class="terms_condition_breif_text">
+      I hereby agree to the terms and conditions of Taxido on booking Car
+    </div>
+    <a href="/homes/terms_and_condition_page">
+    <div class="terms_and_conditions_see_details">
+      see details
+    </div>
+    </a>
+    <button type="submit" class="check_out_button">Checkout For Payment</button>
+  </form>
+  </div>
+</div>

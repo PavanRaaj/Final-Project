@@ -1,6 +1,6 @@
 require "test_helper"
 
-class AddingCarsControllerTest < ActionDispatch::IntegrationTest
+class BookingDetailTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

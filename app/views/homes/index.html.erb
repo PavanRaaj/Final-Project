@@ -12,9 +12,22 @@
       <p class="nav_bar_text_button">Become a Host</p>
       </a>
     </div>
+
+    <% if @presence == 0 %>
     <a href="/homes/login">
       <div class="nav_bar_right_button">Log in</div>
     </a>
+    <% else %>
+    
+      <div class="dropdown">
+        <a href="#">
+        <button class="dropbtn"><%= @user.user_name %></button></a>
+        <div class="dropdown-content">
+          <a href="/logout" data-method="delete">Log Out</a>
+        </div>
+      </div>
+    
+    <% end %>
   </header>
   <div><%= image_tag('home_page_car',class: "home_page_car") %></div>
   <div class="home_page_content">
@@ -29,6 +42,13 @@
     </p>
   </div>
 
-  <div class="take_a_ride_button">Take a Ride</div>
+  <a href="booking_car/booking_page"> <div class="take_a_ride_button">Take a Ride</div> </a>
 </div>
 
+
+<!-- 
+<script>
+  function dropbuton(){
+    document.getElementById("dropbtn").style.visibility = "visible";
+  }
+</script> -->

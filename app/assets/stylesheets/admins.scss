@@ -3,6 +3,14 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import url("https://fonts.googleapis.com/css2?family=Jost&family=Redressed&family=Varela+Round&display=swap");
 
+.nav_bar_admin_power_page{
+  position: absolute;
+  width: 1827px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  background: #116754;
+}
 .main_div_for_admin_login_page {
   background-color: #eafaf1;
   background-image: url(index_image_flip.png);
@@ -67,7 +75,29 @@
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
 }
-
+.input {
+  width: 370px;
+  height: 43px;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-bottom: 2px solid #6d828d;
+}
+.input:hover {
+  border-bottom: 2px solid #116754;
+}
+.input input {
+  width: 300px;
+  height: 35px;
+  margin-top: 5px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.input input::placeholder {
+  color: #6d828d;
+  font-size: 18px;
+}
 .submit_button_admin_login_page {
   width: 170px;
   height: 38px;
@@ -121,6 +151,151 @@
   font-family: "Varela Round", sans-serif;
   cursor: pointer;
 }
+.admin_car_listing_title{
+  position: absolute;
+  margin-left: 800px;
+  margin-top: -100px;
+  font-size: 33px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+}
+.admin_power_car_listing_main_div{
+margin-top: 240px;
+margin-left: 300px;
+// background-color: darkkhaki;
+}
+.admin_power_car_listing_div{
+  position: relative;
+  margin-top: 40px;
+  // margin-left: 380px;
+  border-radius: 22px;
+  width: 1200px;
+  height: 200px;
+  // background-color: #724949;
+  box-shadow: 0 0 5px 3px rgb(214, 214, 214);
+  // display: flex;
+  font-size: 23px;
+  line-height: 34px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  // cursor: pointer;
+}
+.car_image_and_car_title_div{
+  display: flex;
+}
+.admin_power_car_listing_image_div{
+  // background-color: aqua;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25px;
+  margin-left: 45px;
+  height: 150px;
+  width: 200px;
+}
+.img_preview{
+  height: 200px;
+  width: 250px;
+  margin-top: 20px;
+}
+.admin_power_car_listing_car_name_div{
+  // background-color: rgb(218, 109, 109);
+  position: relative;
+  margin-left: 50px;
+  top: 25px;
+  // display: flex;
+  font-size: 33px;
+  font-weight: 600;
+  // justify-content: center;
+  // align-items: center;
+  width: 400px;
+  height: 50px;
+}
+.admin_power_car_listing_per_day_price{
+  // background-color: rgb(188, 231, 146);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -100px;
+  margin-left: 930px;
+  width: 250px;
+  height: 50px;
+}
+.admin_power_car_listing_owner_name_div{
+  // background-color: rgb(18, 202, 202);
+  position: relative;
+  top: -110px;
+  margin-left: 295px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 400px;
+  height: 30px;
+}
+.admin_power_car_listing_Registration_no_div{
+// background-color: darkgray;
+position: relative;
+top: -100px;
+margin-left: 295px;
+// display: flex;
+// justify-content: center;
+// align-items: center;
+width: 400px;
+height: 30px;
+}
+.admin_power_car_listing_fuel_type_div{
+  // background-color: rgb(18, 202, 202);
+  position: relative;
+  top: -170px;
+  margin-left: 680px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 230px;
+  height: 30px;
+}
+.admin_power_car_listing_KM_driven_div{
+  // background-color: darkgray;
+position: relative;
+top: -160px;
+margin-left: 680px;
+// display: flex;
+// justify-content: center;
+// align-items: center;
+width: 230px;
+height: 30px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.admin_power_car_listing_remove_car_div {
+  // background-color: darkorchid;
+  background-color: red;
+  border-radius: 25px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+top: -200px;
+margin-left: 960px;
+width: 200px;
+height: 40px;
+}
+
+
+
+
+
+
 
 // admin adding car page
 
@@ -143,13 +318,13 @@
 .main_div_in_admin_adding_car_page {
   background-color: white;
   position: absolute;
-  margin-top: 210px;
+  margin-top: 160px;
   box-shadow: 0 0 5px 3px rgb(214, 214, 214);
   display: flex;
   border-radius: 12px;
   margin-left: 350px;
   max-width: 1200px;
-  height: 650px;
+  height: 700px;
 }
 .admin_adding_cars_heading_div {
   // background-color: red;
@@ -272,32 +447,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .input_field_right {
   margin-top: -500px;
   margin-left: 610px;
@@ -305,8 +454,7 @@
   height: 500px;
   // background-color: rgb(218, 172, 172);
 }
-
-.admin_adding_car_registration_number_title{
+.admin_adding_car_owner_name_title{
   font-size: 20px;
   position: relative;
   top: 60px;
@@ -316,8 +464,28 @@
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
 }
-.admin_adding_car_registration_number{
+.admin_adding_car_owner_name{
   margin-top: 70px;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 400px;
+  height: 40px;
+}
+.admin_adding_car_registration_number_title{
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+  color: #11D99B;
+  line-height: 24px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.admin_adding_car_registration_number{
+  margin-top: 50px;
   background: none;
   font-size: 18px;
   border: none;
@@ -416,7 +584,7 @@
   width: 140px;
   height: 50px;
   margin-top: 50px;
-  margin-left: 120px;
+  margin-left: 500px;
   text-align: center;
   border-radius: 12px;
   color: white;

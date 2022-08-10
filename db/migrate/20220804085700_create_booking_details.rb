@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateBookingDetails < ActiveRecord::Migration[6.1]
   def change
     create_table :booking_details do |t|
@@ -7,7 +9,7 @@ class CreateBookingDetails < ActiveRecord::Migration[6.1]
       t.time :pick_up_time
       t.date :end_date
       t.time :end_time
-      t.references :cars_lists, null: true, foreign_key: {on_delete: :cascade,on_update: :cascade}
+      t.references :cars_lists, null: true, foreign_key: { on_delete: :cascade, on_update: :cascade }
 
       t.timestamps
     end

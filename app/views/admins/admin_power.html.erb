@@ -1,6 +1,6 @@
 <div >
   <header class="nav_bar_admin_power_page">
-    <div><%= image_tag('logo.png',class: "logo_image") %></div>
+    <div><a href="/"><%= image_tag('logo.png',class: "logo_image") %></a></div>
 
     <div>
       <a href="/admins/admin_adding_car">
@@ -8,9 +8,30 @@
       </a>
     </div>
 
-    <a href="#">
-      <div class="nav_bar_right_button">Log Out</div>
-    </a>
+    <% if @presence == 0 %>
+  <a href="/homes/login">
+    <div class="nav_bar_right_button">Log in</div>
+  </a>
+  <% else %>
+
+  <div class="dropdown">
+        <span>
+        <%= image_tag('image.png',class: "user_image",onclick: "dropdwn()" ) %>
+      </span>
+      
+        <div class="dropdown-content" id="dropdown-content">
+          <div class="dropbtn_btn">
+            <button class="dropbtn"><%= image_tag('profile1.jpg',class: "profile_image") %> <%= @user.user_name %> </button>
+          </div>
+          <div>
+          <span class="logout_content">
+          <a href="/logout" data-method="delete"><%= image_tag('logout1.png',class: "profile_image",width: "20px" ) %>Log Out</a>
+        </span>
+        </div>
+        </div>
+      </div>
+
+  <% end %>
   </header>
 
   <div class="admin_car_listing_title">
@@ -61,3 +82,19 @@
   <%end%>
   </div>
 </div>
+
+
+<script>
+  function dropdwn(){
+    document.getElementById("dropdown-content").style.display="block";
+  }
+
+  window.onclick = function(e) {
+  if (!e.target.matches('.user_image')) {
+  var myDropdown = document.getElementById("dropdown-content");
+    if (myDropdown.style.display = "block") {
+      myDropdown.style.display = "none";
+    }
+  }
+}
+</script>

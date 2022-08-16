@@ -22,6 +22,16 @@ class HomesController < ApplicationController
     end
   end
 
+  def contact_us_page
+    current_user
+    if current_user
+      @user = User.find(current_user.id)
+      @presence = 1
+    else
+      @presence = 0
+    end
+  end
+
   def new
     current_user
     user = User.new
@@ -32,6 +42,30 @@ class HomesController < ApplicationController
     if user.save
       session[:current_user_id] = user.id
       redirect_to root_path
+    else
+      flash[:error] = user.errors.full_messages.join(',')
+      redirect_to '/homes/signup'
+    end
+  end
+
+  def contact_us
+    contact_us = ContactUsDetail.new
+  end
+
+  def contact_us_details
+    current_user
+    if current_user
+      @user = User.find(current_user.id)
+      @presence = 1
+      contact_us = ContactUsDetail.new(name: @user.user_name, query: params[:query])
+    else
+      @presence = 0
+      contact_us = ContactUsDetail.new(name: params[:name], query: params[:query])
+    end
+    if contact_us.save
+      redirect_to '/'
+    else
+      render plain: 'failed'
     end
   end
 
@@ -39,5 +73,9 @@ class HomesController < ApplicationController
 
   def user_params
     params.require(:user).permit(:user_name, :email, :password)
+  end
+
+  def contact_us_params
+    params.require(:contact_us_details).permit(:name, :query)
   end
 end

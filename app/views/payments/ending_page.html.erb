@@ -1,11 +1,11 @@
 <header class="nav_bar_become_a_host_page">
-    <div><%= image_tag('logo.png',class: "logo_image") %></div>
+    <div><a href="/"><%= image_tag('logo.png',class: "logo_image") %></a></div>
     <div>
       <p class="nav_bar_contact_us_button">Contact Us</p>
     </div>
     <a href="/homes/terms_and_condition_page">
     <div>
-      <p class="nav_bar_tcs_button">T&c's</p>
+      <p class="nav_bar_tcs_button">T&C</p>
     </div>
     </a>
     <% if @presence == 0 %>
@@ -15,10 +15,20 @@
     <% else %>
     
       <div class="dropdown">
-        <a href="#">
-        <button class="dropbtn"><%= @user.user_name %></button></a>
-        <div class="dropdown-content">
-          <a href="/logout" data-method="delete">Log Out</a>
+        <span>
+        <%= image_tag('image.png',class: "user_image",onclick: "dropdwn()" ) %>
+      </span>
+      
+        <div class="dropdown-content" id="dropdown-content">
+        
+          <div class="dropbtn_btn">
+            <button class="dropbtn"><%= image_tag('profile1.jpg',class: "profile_image") %><%= @user.user_name %></button>
+          </div>
+          <div>
+          <span class="logout_content">
+          <a href="/logout" data-method="delete"><%= image_tag('logout1.png',class: "profile_image",width: "20px" ) %>Log Out</a>
+        </span>
+        </div>
         </div>
       </div>
     
@@ -41,3 +51,18 @@
   </div>
   </a>
 </div>
+
+<script>
+  function dropdwn(){
+    document.getElementById("dropdown-content").style.display="block";
+  }
+
+  window.onclick = function(e) {
+  if (!e.target.matches('.user_image')) {
+  var myDropdown = document.getElementById("dropdown-content");
+    if (myDropdown.style.display = "block") {
+      myDropdown.style.display = "none";
+    }
+  }
+}
+</script>

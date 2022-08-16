@@ -1,0 +1,119 @@
+<header class="nav_bar_booking_car_page">
+  <div><a href="/"><%= image_tag('logo.png',class: "logo_image") %></a></div>
+  <div>
+    <a href="/homes/become_a_host">
+      <p class="nav_bar_text_button">Become a Host</p>
+    </a>
+  </div>
+
+  <% if @presence == 0 %>
+  <a href="/homes/login">
+    <div class="nav_bar_right_button">Log in</div>
+  </a>
+  <% else %>
+
+  <div class="dropdown">
+    <span>
+      <%= image_tag('image.png',class: "user_image",onclick: "dropdwn()" ) %>
+    </span>
+
+    <div class="dropdown-content" id="dropdown-content">
+      <div class="dropbtn_btn">
+        <button class="dropbtn">
+          <%= image_tag('profile1.jpg',class: "profile_image") %><%=
+          @user.user_name %>
+        </button>
+      </div>
+      <div>
+        <span class="logout_content">
+          <a href="/logout" data-method="delete"
+            ><%= image_tag('logout1.png',class: "profile_image",width: "20px" )
+            %>Log Out</a
+          >
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <% end %>
+</header>
+
+<div class="contact_us_main_div">
+  <form action="/homes/contact_us_details" method="post">
+    <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>"
+  />
+  <div class="user_name_div_in_conatct_us_page">
+    <input
+      type="text"
+      name="name"
+      <%= @user ? "disabled" : "" %>
+      value="<%= @user.user_name if @user %>"
+      placeholder="User Name"
+      class="user_name_in_conatct_us_page"
+    />
+  </div>
+  <div class="query_div_in_contact_us_page">
+    <textarea
+      placeholder="Enter Your Query"
+      name="query"
+      required
+      autofocus
+      cols="30"
+      rows="10"
+      class="query_in_contact_us_page"></textarea>
+  </div>
+
+  <div class="submit_buttton_div_in_contact_us_page">
+    <input
+      type="submit"
+      value="Submit"
+      class="submit_buttton_in_contact_us_page"
+    />
+  </div>
+  </form>
+</div>
+<div class="contact_us_or_text_div">--------------- or ---------------</div>
+<div class="contact_us_bottom_div">
+<a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=taxido.helpdesk@gmail.com" target="_blank">
+  <div class="contact_us_through_mail">
+    <div class="write_an_mail_text_div">
+     <p class="write_an_mail_text"> Write an email </p> 
+    </div>
+    <div class="expect_reply_text">
+       Expect reply within 24 hours
+    </div>
+    <div class="email_text">
+        taxido.helpdesk@gmail.com
+     </div>
+  </div>
+  </a>
+  <div class="contact_us_through_mobile">
+    <div class="call_us_text_div">
+        Call us
+      </div>
+      <div class="available_text">
+         Available form 9 AM to 9 PM
+      </div>
+      <div class="number_text">
+          0861-333-2213
+       </div>
+  </div>
+</div>
+
+<script>
+  function dropdwn() {
+    document.getElementById("dropdown-content").style.display = "block";
+  }
+
+  window.onclick = function (e) {
+    if (!e.target.matches(".user_image")) {
+      var myDropdown = document.getElementById("dropdown-content");
+      if ((myDropdown.style.display = "block")) {
+        myDropdown.style.display = "none";
+      }
+    }
+  };
+</script>

@@ -32,54 +32,60 @@
         </div>
         <div class="sign_up_to_account_text_div">Create a new your Account</div>
         <form action="/homes/create" method="post">
-
           <input
-      type="hidden"
-      name="authenticity_token"
-      value="<%= form_authenticity_token %>"
-    />
-        <span class="signup_input_elements">
-          <span class="login_input_email_title_and_signup_ipunt_username_title">
-            Username
-          </span>
-          <div>
-            <input
-              type="text"
-              class="login_input_email_and_signup_input_username"
-              name="user[user_name]"
-              placeholder="Pavan Raaj"
-              autofocus
-              required
-            />
-          </div>
-          <span>
-            Mail address
-          </span>
-          <div>
-            <input
-              type="email"
-              class="signup_input_email"
-              name="user[email]"
-              placeholder="example@abc.com"
-              required
-            />
-          </div>
-          <span class="singup_input_password_title"> Password </span>
-          <div>
-            <input
-              type="password"
-              class="signup_input_password"
-              name="user[password]"
-              placeholder="........."
-              required
-            />
-          </div>
-          <div class="submit_div">
+            type="hidden"
+            name="authenticity_token"
+            value="<%= form_authenticity_token %>"
+          />
+            <% if flash[:error]%>
+            <p class = "flash-error_signup_page"><%= flash[:error]%></p>
+            <%end%>
+          <span class="signup_input_elements">
+            <span
+              class="login_input_email_title_and_signup_ipunt_username_title"
+            >
+              Username
+            </span>
             <div>
-              <button class="login_button_login_page_and_signup_button_signup_page"> Sign up </button>
+              <input
+                type="text"
+                class="login_input_email_and_signup_input_username"
+                name="user[user_name]"
+                placeholder="User Name"
+                autofocus
+                
+              />
             </div>
-          </div>
-        </span>
+            <span> Mail address </span>
+            <div>
+              <input
+                type="email"
+                class="signup_input_email"
+                name="user[email]"
+                placeholder="example@abc.com"
+                
+              />
+            </div>
+            <span class="singup_input_password_title"> Password </span>
+            <div>
+              <input
+                type="password"
+                class="signup_input_password"
+                name="user[password]"
+                placeholder="........."
+                
+              />
+            </div>
+            <div class="submit_div">
+              <div>
+                <button
+                  class="login_button_login_page_and_signup_button_signup_page"
+                >
+                  Sign up
+                </button>
+              </div>
+            </div>
+          </span>
         </form>
       </div>
     </div>

@@ -8,9 +8,14 @@ class SessionsController < ApplicationController
     # p @user
     if @user&.authenticate(params[:user][:password])
       session[:current_user_id] = @user.id
-      redirect_to root_path
+      if @user.role == 'admin'
+        redirect_to admin_power_path
+      else
+        redirect_to root_path
+      end
     else
-      render plain: 'failed'
+      flash[:error] = 'Invalid Email or Password'
+      redirect_to '/homes/login'
     end
   end
 

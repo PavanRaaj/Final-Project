@@ -1,13 +1,21 @@
 # frozen_string_literal: true
 
 class AdminsController < ApplicationController
-  skip_before_action :ensure_user_logged_in
+  # skip_before_action :ensure_user_logged_in
 
-  def admin
-    if params[:user][:email] == 'taxido.admin@taxido.com' && params[:user][:password] == 'ADMINPAVAN'
-      redirect_to admin_power_path
+  before_action :ensure_admin
+
+  def ensure_admin
+    redirect_to '/homes/login' unless current_user.role == 'admin'
+  end
+
+  def admin_power
+    current_user
+    if current_user
+      @user = User.find(current_user.id)
+      @presence = 1
     else
-      render plain: 'failed'
+      @presence = 0
     end
   end
 
@@ -18,7 +26,13 @@ class AdminsController < ApplicationController
   def admin_add_car
     car_list = CarsList.new(car_list_params)
     car_list.car_image.attach(car_list_params[:car_image])
-    redirect_to admin_power_path if car_list.save
+    if car_list.save
+      redirect_to admin_power_path
+    else
+      flash[:error] = car_list.errors.full_messages.join(',')
+      redirect_to '/admins/admin_adding_car'
+
+    end
   end
 
   def remove_car

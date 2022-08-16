@@ -50,6 +50,14 @@
   font-family: "Varela Round", sans-serif;
   cursor: pointer;
 }
+.user_image{
+  width: 40px;
+  height: 40px;
+  margin-left: 140px;
+  border-radius: 50%;
+  margin-top: 5%;
+  cursor: pointer;
+}
 .nav_bar_right_button {
   position: absolute;
   width: 163px;
@@ -73,58 +81,111 @@
   background-color: hsl(161, 85%, 42%);
   color: white;
 }
-.dropbtn {
-  border-radius: 12px;
-  font-weight: 600;
+.user_name_div{
+  // background-color: yellow;
   font-size: 23px;
-  line-height: 44px;
-  width: 163px;
-  height: 47px;
+  font-weight: 600;
+  margin-top: -37px;
+  margin-left: 200px;
+  position: absolute;
+  color: white;
+  width: 150%;
   font-family: "Jost", sans-serif;
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
-  background-color: #11D99B;
-  color: white;
+}
+.profile_image {
+  position: absolute;
+  left: 5%;
+  width: 22px;
+  height: 23px;
+}
+
+.dropbtn {
+  // background-color: blueviolet;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 13px 16px;
+  width: 200px;
+  color: black;
+  // width: 163px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  // background-color: #11D99B;
+  background: transparent;
+  color: black;
+  text-align: center;
+  // padding-top: 3px;
+  border: none;
+}
+.dropbtn_index_page{
+  // background-color: blueviolet;
+  font-weight: 600;
+  font-size: 1.3rem;
+  // padding: 13px 16px;
+  width: 200px;
+  color: black;
+  // width: 163px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  // background-color: #11D99B;
+  background: transparent;
+  color: black;
   text-align: center;
   // padding-top: 3px;
   border: none;
 }
 
+.dropbtn:hover{
+  background-color: #1167543a;
+  cursor: pointer;
+}
 .dropdown {
+  // background-color: blue;
   position: relative;
   display: inline-block;
-  left: 75%;
-  top: 32%;
+  width: 150px;
+  left: 70%;
+  top: 28%;
 }
-
+.logout_image {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: hsl(161, 85%, 42%);
-  left: 10%;
+  background-color: white;
+  left: 140px;
   top: 100%;
-  border-radius: 6px;
-  height: 45px;
+  border-radius: 3px;
+  height: auto;
   min-width: 160px;
+  text-align: center;
   font-family: "Jost", sans-serif;
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
   // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
-  color: white;
-  padding: 3px 16px;
+  color: block;
+  padding: 13px 16px;
   // padding: 10px 15px;
   font-size: 1.3rem;
   font-weight: 600;
+  color: black;
   text-decoration: none;
   display: block;
 }
-
-.dropdown-content:hover {
-  // background-color: hsl(161, 86%, 52%);
+a{
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #1167543a;
   cursor: pointer;
 
 }
@@ -132,15 +193,15 @@
 //   color: white;
 // }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-  border-radius: 0 6px 6px 6px;
-}
+// .dropdown:hover .dropdown-content {
+//   display: block;
+//   border-radius: 0 6px 6px 6px;
+// }
 
-.dropdown:hover .dropbtn {
-  background-color: hsl(161, 85%, 42%);
-  border-radius: 12px 12px 0 12px;
-}
+// .dropdown:hover .dropbtn {
+//   // background-color: hsl(161, 85%, 42%);
+//   // border-radius: 12px 12px 0 12px;
+// }
 
 
 .home_page_car {
@@ -317,6 +378,20 @@
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
 }
+.flash_error_login_page{
+  color: red;
+  position: absolute;
+  margin-left: -210px;
+  font-size: 19px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+margin-top: 185px;
+  height: 66px;
+  width:auto ;
+  font-weight: bold;
+}
+
 .login_input_elements {
   position: absolute;
   margin-top: 220px;
@@ -490,9 +565,27 @@
   box-shadow: 0 0 2px 2px rgb(214, 214, 214);
   background-color: #116754;
 }
+.flash-error_signup_page{
+  margin-top: 110px;
+  color: red;
+  position: absolute;
+  margin-left: -240px;
+  font-size: 19px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  overflow: scroll;
+  height: 66px;
+  width:auto ;
+  font-weight: bold;
+}
+.flash-error_signup_page::-webkit-scrollbar{
+  display: none;
+}
+
 .sign_up_to_account_text_div{
-  
-  margin-top: 120px;
+  // background-color: turquoise;
+  margin-top: 80px;
   font-size: 19px;
   font-family: "Jost", sans-serif;
   font-family: "Redressed", cursive;
@@ -556,7 +649,9 @@
 }
 .nav_bar_become_a_host_page{
   position: absolute;
-  width: 1842px;
+  position: fixed;
+  z-index: 1;
+  width: 1832px;
   height: 110px;
   left: 0px;
   top: 0px;
@@ -633,7 +728,7 @@
   position: absolute;
   width: 300px;
   height: 50px;
-  left: 150px;
+  left: 30px;
   top: 350px;
   border-radius: 12px;
   font-weight: 600;
@@ -724,11 +819,15 @@
   height: 270px;
   width: 320px;
 }
+.steps_div{
+  margin-left: 100px;
+}
 .first_step_div {
     //   background-color: rgb(172, 126, 126);
     margin-top: 20px;
     width: 1480px;
     height: 500px;
+  
     position: absolute;
     font-family: "Jost", sans-serif;
     font-family: "Redressed", cursive;
@@ -841,4 +940,181 @@
   margin-top: 20px;
   width: 1200px;
   margin-bottom: 50px;
+}
+
+
+// contact_us_page
+
+.contact_us_main_div{
+  width: 700px;
+  height: 350px;
+  box-shadow: 0 0 5px 3px rgb(214, 214, 214);
+  position: absolute;
+  border-radius: 22px;
+  margin-left: 550px;
+  margin-top: 210px;
+}
+.user_name_in_conatct_us_page{
+  margin-top: 50px;
+  background: none;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  margin-left: 150px;
+  border-bottom: 3px solid rgb(119, 119, 119);
+  width: 350px;
+  height: 40px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.query_in_contact_us_page{
+  margin-top: 50px;
+  background: none;
+  font-size: 19px;
+  border: none;
+  outline: none;
+  margin-left: 150px;
+  // border-bottom: 3px solid rgb(119, 119, 119);
+  border: 3px solid rgb(119, 119, 119);
+  width: 350px;
+  height: 60px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+  // padding-top: 20px;
+    // padding-left: 20px;
+}
+.query_in_contact_us_page::-webkit-scrollbar{
+  display: none;
+}
+.submit_buttton_in_contact_us_page{
+  width: 180px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 250px;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border: none;
+  background-color: #11d99b;
+  transition: 0.1s ease-in-out;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.submit_buttton_in_contact_us_page:hover{
+  background-color: #0cc288;
+  cursor: pointer;
+}
+
+.contact_us_or_text_div{
+  position: absolute;
+  font-size: 22px;
+  margin-top: 600px;
+  margin-left: 750px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.contact_us_bottom_div{
+  position: absolute;
+  width: 700px;
+  box-shadow: 0 0 5px 3px rgb(214, 214, 214);
+  height: 250px;
+  // background-color: #F8F8F8;
+  display: flex;
+  border-radius: 12px;
+  margin-top: 650px;
+  margin-left: 550px;
+
+}
+.contact_us_through_mail{
+  // background-color: blueviolet;
+  width: 350px;
+  height: 250px;
+  border-radius: 12px 0 0 12px;
+}
+.contact_us_through_mail:hover{
+  background-color: #F8F8F8;
+cursor: pointer;
+}
+.write_an_mail_text_div{
+  font-size: 22px;
+  // font-weight: 600;
+  // margin-top: 20px;
+  color: black;
+  margin-left: 30px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.write_an_mail_text{
+  position: absolute;
+  margin-top: 30px;
+}
+.expect_reply_text{
+  font-size: 18px;
+  color: darkgray;
+  margin-top: 70px;
+  margin-left: 30px;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.email_text{
+  font-size: 20px;
+  font-weight: 600;
+  color: #11D99B;
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 30px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.contact_us_through_mobile{
+  // background-color: cadetblue;
+  width: 350px;
+  height: 250px;
+  border-radius: 0 12px 12px 0;
+}
+.contact_us_through_mobile:hover{
+  background-color: #F8F8F8;
+cursor: pointer;
+}
+.call_us_text_div{
+  font-size: 22px;
+  // font-weight: 600;
+  margin-top: 30px;
+  color: black;
+  margin-left: 30px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.available_text{
+  font-size: 18px;
+  color: darkgray;
+  margin-top: 10px;
+  margin-left: 30px;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
+}
+.number_text{
+  font-size: 20px;
+  font-weight: 600;
+  color: #11D99B;
+  // position: absolute;
+  margin-top: 125px;
+  margin-left: 30px;
+  font-family: "Jost", sans-serif;
+  font-family: "Redressed", cursive;
+  font-family: "Varela Round", sans-serif;
 }

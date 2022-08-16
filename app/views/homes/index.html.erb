@@ -20,10 +20,24 @@
     <% else %>
     
       <div class="dropdown">
-        <a href="#">
-        <button class="dropbtn"><%= @user.user_name %></button></a>
-        <div class="dropdown-content">
-          <a href="/logout" data-method="delete">Log Out</a>
+        <span>
+        <%= image_tag('image.png',class: "user_image",onclick: "dropdwn()" ) %> 
+      </span>
+
+      <span class="user_name_div">
+         <%= @user.user_name %>
+      </span>
+    
+      
+        <div class="dropdown-content" id="dropdown-content">
+          <div class="dropbtn_btn">
+           <a href="/homes/login"> <button class="dropbtn_index_page"><%= image_tag('profile1.jpg',class: "profile_image") %>New Login</button> </a>
+          </div>
+          <div>
+          <span class="logout_content">
+          <a href="/logout" data-method="delete"><%= image_tag('logout1.png',class: "profile_image",width: "20px" ) %>Log Out</a>
+        </span>
+        </div>
         </div>
       </div>
     
@@ -46,9 +60,18 @@
 </div>
 
 
-<!-- 
+
 <script>
-  function dropbuton(){
-    document.getElementById("dropbtn").style.visibility = "visible";
+  function dropdwn(){
+    document.getElementById("dropdown-content").style.display="block";
   }
-</script> -->
+
+  window.onclick = function(e) {
+  if (!e.target.matches('.user_image')) {
+  var myDropdown = document.getElementById("dropdown-content");
+    if (myDropdown.style.display = "block") {
+      myDropdown.style.display = "none";
+    }
+  }
+}
+</script>

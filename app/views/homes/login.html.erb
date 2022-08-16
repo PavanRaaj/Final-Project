@@ -5,13 +5,7 @@
       <div class="login_sign_up_contents">
         <div class="login_title">
           <h1>Login</h1>
-          <div class="admin_redirect">
-            Are you a
-            <a href="/admins/admin_login"
-              >Admin ?
-              
-            </a>
-          </div>
+          
         </div>
         <div class="sign_in_to_account_text_div">Sign in to your Account</div>
         <form action="/user/login" method="post">
@@ -20,6 +14,9 @@
             name="authenticity_token"
             value="<%= form_authenticity_token %>"
           />
+          <% if flash[:error]%>
+            <p class = "flash_error_login_page"><%= flash[:error]%></p>
+            <%end%>
           <span class="login_input_elements">
             <span
               class="login_input_email_title_and_signup_ipunt_username_title"
@@ -33,7 +30,7 @@
                 placeholder="example@abc.com"
                 name="user[email]"
                 autofocus
-                required
+                
               />
             </div>
             <span
@@ -47,7 +44,7 @@
                 class="login_input_password"
                 placeholder="........."
                 name="user[password]"
-                required
+                
               />
             </div>
             <div class="submit_and_forget_password_div_login_page">
@@ -58,9 +55,9 @@
                   Login
                 </button>
               </div>
-              <div class="forget_password_login_page">
+              <%# <div class="forget_password_login_page">
                 <a href="">Forgot my password?</a>
-              </div>
+              </div> %>
             </div>
           </span>
         </form>

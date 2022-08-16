@@ -13,13 +13,20 @@
     <div class="admin_adding_cars_heading_div">
       <p>Adding Cars</p>
     </div>
-    <form action="/admins/admin_add_car" method="post" enctype="multipart/form-data" oninput="val.value = parseInt(range.value)" >
-
+    <form
+      action="/admins/admin_add_car"
+      method="post"
+      enctype="multipart/form-data"
+      oninput="val.value = parseInt(range.value)"
+    >
       <input
-      type="hidden"
-      name="authenticity_token"
-      value="<%= form_authenticity_token %>"
-    />
+        type="hidden"
+        name="authenticity_token"
+        value="<%= form_authenticity_token %>"
+      />
+      <% if flash[:error]%>
+      <p class="flash_error_admin_car_adding_page"><%= flash[:error]%></p>
+      <%end%>
       <div class="input_field_left">
         <span class="admin_adding_car_owner_number_title">
           Owner Mobile Number *
@@ -32,30 +39,23 @@
             placeholder="9838839898"
             name="car_list[owner_mobile_number]"
             autofocus
-            required
           />
         </div>
 
-        <span class="admin_adding_car_name_title">
-            Car Name *
-          </span>
-  
-          <div>
-            <input
-              type="text"
-              class="admin_adding_car_name"
-              placeholder="Dastun Redi-GO"
-              name="car_list[car_name]"
-              required
-            />
-          </div>
+        <span class="admin_adding_car_name_title"> Car Name * </span>
 
-          <span class="admin_adding_car_km_driven_title">
-            Car KM driven *
-          </span>
+        <div>
+          <input
+            type="text"
+            class="admin_adding_car_name"
+            placeholder="Dastun Redi-GO"
+            name="car_list[car_name]"
+          />
+        </div>
+
+        <span class="admin_adding_car_km_driven_title"> Car KM driven * </span>
         <div class="range_field">
           <input
-            
             type="range"
             min="0"
             max="12000"
@@ -69,23 +69,20 @@
         </div>
 
         <span class="admin_adding_car_per_day_price_title">
-            Per day Car Price *
-          </span>
-  
-          <div>
-            <input
-              type="text"
-              class="admin_adding_car_per_day_price"
-              placeholder="In INR"
-              name="car_list[per_day_price]"
-              required
-            />
-          </div>
+          Per day Car Price *
+        </span>
 
+        <div>
+          <input
+            type="text"
+            class="admin_adding_car_per_day_price"
+            placeholder="In INR"
+            name="car_list[per_day_price]"
+          />
+        </div>
       </div>
 
       <div class="input_field_right">
-
         <span class="admin_adding_car_owner_name_title">
           Car Owner Name *
         </span>
@@ -94,57 +91,57 @@
           <input
             type="text"
             class="admin_adding_car_owner_name"
-            placeholder="Pavan Raaj"
+            placeholder="User Name"
             name="car_list[car_owner_name]"
-            required
           />
         </div>
 
         <span class="admin_adding_car_registration_number_title">
-            Car Registration Number *
-          </span>
-  
-          <div>
-            <input
-              type="text"
-              class="admin_adding_car_registration_number"
-              placeholder="DN39AN1234"
-              name="car_list[car_registration_number]"
-              required
-            />
-          </div>
+          Car Registration Number *
+        </span>
 
-          <span class="admin_adding_car_image_title">
-            Car Image *
-          </span>
-  
-          <div>
-            <input
-              type="file"
-              class="admin_adding_image"
-              name="car_list[car_image]"
-              required
-            />
-          </div>
+        <div>
+          <input
+            type="text"
+            class="admin_adding_car_registration_number"
+            placeholder="DN39AN1234"
+            name="car_list[car_registration_number]"
+          />
+        </div>
 
-         
+        <span class="admin_adding_car_image_title"> Car Image * </span>
+
+        <div>
+          <input
+            type="file"
+            class="admin_adding_image"
+            name="car_list[car_image]"
+            required
+          />
+        </div>
 
         <div class="radio_field">
           <label class="fuel_field">Fuel *</label>
           <div>
-            <input type="radio" name="car_list[fuel_type]" id="diesel" checked="checked" value="Diesel"/>
+            <input
+              type="radio"
+              name="car_list[fuel_type]"
+              id="diesel"
+              checked="checked"
+              value="Diesel"
+            />
             <label class="label" for="diesel">Diesel</label>
           </div>
           <div>
-            <input type="radio" name="car_list[fuel_type]" id="petrol" value="Petrol"/>
+            <input
+              type="radio"
+              name="car_list[fuel_type]"
+              id="petrol"
+              value="Petrol"
+            />
             <label class="label" for="petrol" id="petrol_label">Petrol</label>
           </div>
         </div>
-
-        
-
-       
-
       </div>
 
       <div>

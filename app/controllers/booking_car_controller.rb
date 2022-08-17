@@ -59,9 +59,6 @@ class BookingCarController < ApplicationController
   end
 
   @@booking_id = nil
-  def booking_car
-    booking_detail = BookingDetail.new
-  end
 
   def booking_detail
     current_user

@@ -13,7 +13,7 @@ class HomesController < ApplicationController
   end
 
   def become_a_host
-    current_user
+    # current_user
     if current_user
       @user = User.find(current_user.id)
       @presence = 1
@@ -23,18 +23,13 @@ class HomesController < ApplicationController
   end
 
   def contact_us_page
-    current_user
+    # current_user
     if current_user
       @user = User.find(current_user.id)
       @presence = 1
     else
       @presence = 0
     end
-  end
-
-  def new
-    current_user
-    user = User.new
   end
 
   def create

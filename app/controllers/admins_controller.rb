@@ -19,10 +19,6 @@ class AdminsController < ApplicationController
     end
   end
 
-  def new_car
-    car_list = CarsList.new
-  end
-
   def admin_add_car
     car_list = CarsList.new(car_list_params)
     car_list.car_image.attach(car_list_params[:car_image])

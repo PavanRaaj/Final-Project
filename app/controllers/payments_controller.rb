@@ -25,10 +25,6 @@ class PaymentsController < ApplicationController
     session[:booking_user_id] = nil
   end
 
-  def payment
-    payment_details = PaymentDetail.new
-  end
-
   def payment_details
     booking_user
     payment_details = PaymentDetail.new(card_holder_name: payment_params[:card_holder_name],

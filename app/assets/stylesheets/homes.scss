@@ -102,39 +102,28 @@
 }
 
 .dropbtn {
-  // background-color: blueviolet;
   font-weight: 600;
   font-size: 1.3rem;
   padding: 13px 16px;
   width: 200px;
   color: black;
-  // width: 163px;
   font-family: "Jost", sans-serif;
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
-  // background-color: #11D99B;
   background: transparent;
-  color: black;
   text-align: center;
-  // padding-top: 3px;
   border: none;
 }
 .dropbtn_index_page{
-  // background-color: blueviolet;
   font-weight: 600;
   font-size: 1.3rem;
-  // padding: 13px 16px;
   width: 200px;
   color: black;
-  // width: 163px;
   font-family: "Jost", sans-serif;
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
-  // background-color: #11D99B;
   background: transparent;
-  color: black;
   text-align: center;
-  // padding-top: 3px;
   border: none;
 }
 
@@ -168,13 +157,10 @@
   font-family: "Jost", sans-serif;
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
-  // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown-content a {
-  color: block;
   padding: 13px 16px;
-  // padding: 10px 15px;
   font-size: 1.3rem;
   font-weight: 600;
   color: black;
@@ -206,6 +192,7 @@ a{
 
 .home_page_car {
   position: absolute;
+  position: fixed;
   width: 1000px;
   height: 600px;
   top: 340px;
@@ -900,16 +887,18 @@ margin-top: 185px;
   cursor: pointer;
 }
 .terms_and_conditions_div{
+  // background-color: blanchedalmond;
   position: absolute;
   font-family: "Jost", sans-serif;
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
   margin-left: 70px;
+  margin-top: 100px;
 }
 .terms_ad_conditions_title{
   font-size: 25px;
   
-  margin-top: 130px;
+  margin-top: 30px;
   margin-left: 650px;
 }
 .note_in_tcs{
@@ -972,18 +961,13 @@ margin-top: 185px;
   margin-top: 50px;
   background: none;
   font-size: 19px;
-  border: none;
-  outline: none;
   margin-left: 150px;
-  // border-bottom: 3px solid rgb(119, 119, 119);
   border: 3px solid rgb(119, 119, 119);
   width: 350px;
   height: 60px;
   font-family: "Jost", sans-serif;
   font-family: "Redressed", cursive;
   font-family: "Varela Round", sans-serif;
-  // padding-top: 20px;
-    // padding-left: 20px;
 }
 .query_in_contact_us_page::-webkit-scrollbar{
   display: none;

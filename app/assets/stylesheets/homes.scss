@@ -783,6 +783,14 @@ margin-top: 185px;
   text-align: left;
   word-spacing: 3px;
 }
+.steps_content a{
+  color: hsl(161, 85%, 42%);
+  text-decoration: none;
+}
+.steps_content a:hover{
+  color: #11D99B;
+  cursor: pointer;
+}
 .test_image {
   margin-top: 20px;
   margin-left: 200px;

@@ -10,6 +10,12 @@
 ### What is Taxido ?
    <p> Taxido is an car rental application where we can rent a car when we are in new place, in which per day prices are very affordable. Cars are well maintainend and users will get best experience by using our website.. </p>
 
+### Gems used:
+
+ * Active Storage
+ * bcrypt
+ * Rubocop
+
 ### Features of Taxido :
 
  #### * Sign Up(Completed)

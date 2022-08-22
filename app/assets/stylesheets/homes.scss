@@ -734,6 +734,9 @@ margin-top: 185px;
     cursor: pointer;
     background-color: #147c65;
 }
+html{
+  scroll-behavior: smooth;
+}
 .steps_to_become_host_div {
   //   background-color: rgb(169, 172, 126);
   margin-top: 532px;
@@ -818,11 +821,10 @@ margin-top: 185px;
   margin-left: 100px;
 }
 .first_step_div {
-    //   background-color: rgb(172, 126, 126);
-    margin-top: 20px;
+      // background-color: rgb(172, 126, 126);
+    // margin-top: 20px;
     width: 1480px;
     height: 500px;
-  
     position: absolute;
     font-family: "Jost", sans-serif;
     font-family: "Redressed", cursive;

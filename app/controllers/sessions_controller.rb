@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
   def login
     @user = User.find_by(email: params[:user][:email])
     # p @user
+    # if @user && @user.authenticate(params[:user][:password])
     if @user&.authenticate(params[:user][:password])
       session[:current_user_id] = @user.id
       if @user.role == 'admin'

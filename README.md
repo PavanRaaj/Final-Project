@@ -37,7 +37,7 @@
    * For adding a car firstly he should login using Admin Credentilas.
        __Admin Credentials__:
        
-       ###### Email ID: taxido.admin@taxodo.com
+       ###### Email ID: taxido.admin@taxido.com
        ###### Password: ADMINPAVAN
    * Then he can add the car by providing required information about the car and by uplaoding an Image of .png format.   
 
